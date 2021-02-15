@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple menu</title>
+</head>
+<body>
+    <script>
+        var choice = 0;
+
+        do{
+            choice = parseInt(prompt("Enter an option from the menu" + "\n" + "Option 1" + "\n" + "Option 2" + "\n" + "Option 3"));
+            switch(choice)
+            {
+                case 1:
+                    alert("you have selected option 1");
+                    break;
+                case 2:
+                    alert("you have selected option 2");
+                    break;
+                default:
+                    alert("EXIT");
+            }
+        }while(choice!=3)
+    </script>
+</body>
+</html>
