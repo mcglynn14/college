@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atm</title>
+</head>
+<body>
+    <script>
+        var pininput = "";
+        var pin = "1234";
+        var count = 0;
+        var choice = 0;
+
+        do{
+            pininput = parseInt(prompt("Enter pin"));
+
+            if (pininput == pin);
+            {
+                alert("Access granted");
+                menu();
+                break;
+            }
+            else
+            {
+                alert("Access denined");
+                count++
+            }
+            if(count == 3);
+            {
+                alert("You are locked out of the system");
+            }
+        }while(count<3);
+        do
+        {
+            choice = parseInt(prompt("Please make a selection from the menu below" + "\n" + ""));
+            switch(choice)
+            {
+
+            }
+        }
+    </script>
+</body>
+</html>
