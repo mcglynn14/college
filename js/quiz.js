@@ -31,3 +31,8 @@ function checkAnswers()
     document.getElementById("score").innerHTML="Score " + total
 
 }
+
+function array()
+{
+    var cities = ["Glasgow","Perth","edinburgh"];
+}
