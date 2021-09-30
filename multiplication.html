@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function multi()
+        {
+            var number1 = parseInt(document.getElementById("num1").value);
+            var number2 = parseInt(document.getElementById("num2").value);
+
+            var total = number1 * number2;
+
+            document.getElementById("answer").innerHTML = total;
+        }
+    </script>
+</head>
+<body>
+    <h1>Multiplication</h1>
+    <input type="text" id="num1">
+    *
+    <input type="text" id="num2">
+    =
+    <label for="" id="answer"></label><br><br>
+    <button onclick="multi()">Calculate</button>
+</body>
+</html>
