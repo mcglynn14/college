@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var num1 = parseInt(prompt("enter a number"));
+        var symbol = prompt("Enter a either +, - , * or /");
+        var num2 = parseInt(prompt("enter a number"));
+
+        var sum = 0;
+
+        switch(symbol)
+        {
+            case '+':
+                document.write(num1 + " + " + num2 + " = " + addNum());
+                break;
+            case '-':
+                document.write(num1 + " - " + num2 + " = " + subNum());
+                break;
+            case '*':
+                document.write(num1 + " * " + num2 + " = " + multiNum());
+                break;
+            case '/':
+                document.write(num1 + " / " + num2 + " = " + divNum());
+                break;
+            default:
+                document.write("you must enter +, - , * or /")
+        }
+
+        function addNum()
+        {
+            return num1 + num2;
+        }
+        
+        function subNum()
+        {
+            return num1 - num2;
+        }
+        
+        function multiNum()
+        {
+            return num1 * num2;
+        }
+        function divNum()
+        {
+            return num1 / num2;
+        }
+    </script>
+</body>
+</html>
