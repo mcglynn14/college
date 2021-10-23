@@ -1,0 +1,26 @@
+body{
+    margin: 0px;
+    background-color: darkslategray;
+}
+#container{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas: 
+    ".    .    .    ."
+    ".    calc    calc    ."
+    ".    calc    calc    ."
+    ".    .    .    .";
+}
+#calc{
+    grid-area: calc;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background-color: dimgrey;
+    border: 3px solid goldenrod;
+}
+#calc #num1, #num2{
+    text-align: center;
+}
