@@ -1,0 +1,31 @@
+body{
+    margin: 0 0 0 0;
+    width: auto;
+}
+.header{
+    height: 79px;
+    width: auto;
+    border-bottom: 2px solid #000000;
+}
+.navbar{
+    text-align: right;
+    margin-left: -95px;
+    width: auto;
+}
+.logo{
+    margin-top: 0px;
+    padding-top: 0px;
+    text-align: left;
+}
+
+
+
+
+
+
+
+.container{
+    background-color: #87F50F;
+    height: 1060px;
+    width: auto;
+}
