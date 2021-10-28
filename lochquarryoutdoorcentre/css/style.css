@@ -11,21 +11,83 @@ body{
     text-align: right;
     margin-left: -95px;
     width: auto;
+    margin-top: -40px;
 }
 .logo{
     margin-top: 0px;
+    margin-left: 0px;
     padding-top: 0px;
     text-align: left;
 }
-
-
-
-
-
-
-
+.home{
+    color: #000;
+    text-decoration: none;
+    font-family: sans-serif;
+    padding-right: 30px;
+    text-align: center;
+}
+.siteinformation{
+    color: #000;
+    text-decoration: none;
+    font-family: sans-serif;
+    padding-right: 30px;
+    text-align: center;
+}
+.activities{
+    color: #000;
+    text-decoration: none;
+    font-family: sans-serif;
+    padding-right: 30px;
+    text-align: center;
+}
+.reviews{
+    color: #000;
+    text-decoration: none;
+    font-family: sans-serif;
+    padding-right: 30px;
+    text-align: center;
+}
 .container{
     background-color: #87F50F;
     height: 1060px;
+    width: auto;
+    margin-top: -21px;
+}
+h1{
+    text-align: center;
+    font-family: sans-serif;
+    padding-top: 40px;
+    color: #483D3D;
+}
+p{
+    text-align: center;
+    font-family: arial;
+    width: auto;
+}
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-height: 290px;
+    padding-top: 20px;
+    width: auto;
+}
+.link{
+    color: #000;
+    font-family: sans-serif;
+    text-align: center;
+    display: block;
+}
+footer{
+    height: 100px;
+    border-top: 2px solid #000000;
+    text-align: center;
+    padding-top: 30px;
+    width: auto;
+}
+.copy{
+    text-align: center;
+    padding-top: 30px;
+    font-family: sans-serif;
     width: auto;
 }
