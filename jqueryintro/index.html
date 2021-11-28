@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"/>
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div id="index" data-role="page" data-title="my app" data-theme="b">
+        <div data-role="header" data-position="fixed">
+            <h4>My Application</h4>
+        </div>
+
+        <div data-role="content">
+            <h2>Content</h2>
+
+            <label for="">Enter a number</label>
+            <input type="text" id="num1">
+
+            <label for="">Enter a number</label>
+            <input type="text" id="num2">
+
+            <button onclick="add()">Add Numbers</button>
+
+            <label for="" id="answer">Answer:</label>
+
+            <button onclick="empty()">Clear</button>
+        </div>
+
+        <div data-role="footer" data-position="fixed">
+            <h4>My Application: All Rights Reserved</h4>
+        </div>
+
+
+
+    </div>
+</body>
+</html>
