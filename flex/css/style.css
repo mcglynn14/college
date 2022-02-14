@@ -1,0 +1,80 @@
+/* Global css */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+    height: 100vh;
+    width: 100vw;
+}
+a{
+    text-decoration: none;
+    color: darkgray;
+}
+li{
+    list-style: none;
+}
+img{
+    width: 100%;
+}
+/* Main container */
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: lightgray;
+    width: 100%;
+    height: 100%;
+    max-width: 1400px;
+    margin: auto;
+}
+section{
+    border: 1px solid white;
+    background: orangered;
+    width: 92%;
+    margin: 3% 0;
+}
+/* Top section */
+.top{
+    display: flex;
+}
+.top > div{
+    border: 1px solid white;
+    padding: 10% 0;
+    width: 31%;
+    margin: 2% 0 2% 1.8%;
+}
+/* Bottom section */
+.bottom{
+    display: flex;
+    background: orangered;
+}
+.left, .right{
+    background: yellow;
+    display: flex;
+
+}
+.left{
+    flex-direction: column;
+    width: 30%;
+    align-items: center;
+    margin: 2%;
+}
+.left > div{
+    border: 1px solid black;
+    padding: 30% 0;
+    width: 94%;
+    margin: 4% 0;
+}
+.right{
+    width: 66%;
+    margin: 2%;
+    flex-wrap: wrap;
+}
+.right > div{
+    width: 46%;
+    border: 1px solid black;
+    margin: 2%;
+}

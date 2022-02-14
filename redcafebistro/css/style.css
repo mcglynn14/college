@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+/* GLOBAL CSS*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+img{
+    width: 100%;
+}
+a{
+    text-decoration: none;
+
+}
+body{
+    background-image: url(../img/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+}
+header{
+    margin: 0;
+}
+.redcafe-navbar{
+    width: 50%;
+    margin-left: 25%;
+    background-color: #D9042B;
+    margin-right: 0;
+}
+.redcafe-logo{
+    width: 50%;
+    height: 60%;
+}
+.redcafe-navlinks{
+    margin-top: -5%;
+}
+.redcafe-ul{
+    text-align: center;
+    margin-left: 40%;
+    display: inline;
+    list-style: none;
+}
+.navbar-li{
+    display: inline;
+    margin-left: 5%;
+}
+.redcafe-home{
+    color: #0D0D0D;
+    font-size: 20px;
+    font-family: 'Poppins',sans-serif;
+}
+.redcafe-home:hover{
+    color: #fff;
+}
+.redcafe-gallery{
+    color: #0D0D0D;
+    font-size: 20px;
+    font-family: 'Poppins',sans-serif;
+}
+.redcafe-gallery:hover{
+    color: #fff;
+}
+.redcafe-contact{
+    color: #0D0D0D;
+    font-size: 20px;
+    font-family: 'Poppins',sans-serif;
+}
+.redcafe-contact:hover{
+    color: #fff;
+}
+/* HOME CSS */
+main{
+    width: 50%;
+    height: 100%;
+    margin-left: 25%;
+    margin-right: 0;
+}
+.redcafe-mainbackground{
+    background-color: #fff;
+    height: 200%;
+}
+.redcafe-mainbanner{
+    height: 18%;
+}
+.redcafe-aboutustitle{
+    text-align: center;
+    color: #0D0D0D;
+    font-family: 'Poppins',sans-serif;
+}
+.redcafe-aboutustext{
+    text-align: center;
+    color: #0D0D0D;
+    font-family: 'Poppins',sans-serif;
+}
+.redcafe-athometitle{
+    text-align: center;
+    color: #0D0D0D;
+    font-family: 'Poppins',sans-serif;
+}
+.redcafe-athometext{
+    text-align: center;
+    color: #0D0D0D;
+    font-family: 'Poppins',sans-serif;
+}
+.redcafe-bnstreettitle{
+    text-align: center;
+    color: #0D0D0D;
+    font-family: 'Poppins',sans-serif;
+}
+.redcafe-bnstreettext{
+    text-align: center;
+    color: #0D0D0D;
+    font-family: 'Poppins',sans-serif;
+}
+.redcafe-diningexpertitle{
+    text-align: center;
+    color: #0D0D0D;
+    font-family: 'Poppins',sans-serif;
+}
+.redcafe-diningexpertext{
+    text-align: center;
+    color: #0D0D0D;
+    font-family: 'Poppins',sans-serif;
+}
+.redcafe-openingtitle{
+    text-align: center;
+    color: #0D0D0D;
+    font-family: 'Poppins',sans-serif;
+}
+.redcafe-openingul{
+    list-style: disc;
+    width: 24%;
+    margin-left: 40%;
+}
+.redcafe-mondayopening{
+    text-align: center;
+    font-family: 'Poppins',sans-serif;
+}
+.redcafe-tuesdayopening{
+    text-align: center;
+    font-family: 'Poppins',sans-serif;
+}.redcafe-wednesdayopening{
+    text-align: center;
+    font-family: 'Poppins',sans-serif;
+}
+.redcafe-thursdayopening{
+    text-align: center;
+    font-family: 'Poppins',sans-serif;
+}
+.redcafe-fridayopening{
+    text-align: center;
+    font-family: 'Poppins',sans-serif;
+}
+.redcafe-saturdayopening{
+    text-align: center;
+    font-family: 'Poppins',sans-serif;
+}
+.redcafe-sundayopening{
+    text-align: center;
+    font-family: 'Poppins',sans-serif;
+}
+footer{
+    background-color: #D9042B;
+    width: 50%;
+    height: 15%;
+    margin: 62% 0 0 25%;
+}
+.redcafe-copy{
+    padding-top: 6%;
+    text-align: center;
+    font-family: 'Poppins',sans-serif;
+    font-size: 18px;
+    color: #0D0D0D;
+}
+/* GALLERY CSS */
+.redcafe-gallerymain{
+    width: 50%;
+    height: 90%;
+    margin-left: 25%;
+    margin-right: 0;
+}
+.redcafe-gallerymainbackground{
+    background-color: #fff;
+    height: 145%;
+}
+.redcafe-gallerytitle{
+    font-family: 'Poppins',sans-serif;
+    text-align: center;
+}
+.redcafe-gallerysection{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding-top: 15%;
+}
+.redcafe-galleryfooter{
+    background-color: #D9042B;
+    width: 50%;
+    height: 15%;
+    margin: 16% 0 0 25%;
+}
+/* CONTACT CSS */
+.redcafe-contacttitle{
+    font-family: 'Poppins',sans-serif;
+    text-align: center;
+}
+.redcafe-contacttxt1{
+    font-family: 'Poppins',sans-serif;
+    text-align: center;
+}
+.redcafe-contacttxt2{
+    font-family: 'Poppins',sans-serif;
+    text-align: center;
+}
+form{
+    margin-left: 10%;
+    padding: 0 10% 0 10%;
+}
+.redcafe-namelabel{
+    font-family: 'Poppins',sans-serif;
+}
+.redcafe-nameinput{
+    display: flex;
+    width: 80%;
+}
+.redcafe-emaillabel{
+    font-family: 'Poppins',sans-serif;
+}
+.redcafe-emailinput{
+    display: flex;
+    width: 80%;
+}
+.redcafe-timelabel{
+    font-family: 'Poppins',sans-serif;
+}
+.redcafe-timeinput{
+    display: flex;
+    width: 80%;
+}
+input[type="time"]::-webkit-calendar-picker-indicator {
+    background: none;
+}
+.redcafe-datelabel{
+    font-family: 'Poppins',sans-serif;
+}
+.redcafe-dateinput{
+    display: flex;
+    width: 80%;
+}
+input[type="date"]::-webkit-calendar-picker-indicator {
+    display: none;
+    -webkit-appearance: none;
+}
+.redcafe-submitinput{
+    background-color: #D9042B;
+    color: #0D0D0D;
+    text-align: center;
+    border: 2px solid #D9042B;
+    margin: 5% 0 0 27%;
+    padding: 4% 8% 4% 8%;
+    font-family: 'Poppins',sans-serif;
+}
+.redcafe-submitinput:hover{
+    background-color: transparent;
+}
+.redcafe-map{
+    margin: 7% 0 0 20%;
+}
+/* CONFIRM CSS */
+.redcafe-confirmmain{
+    width: 50%;
+    height: 50%;
+    margin-left: 25%;
+    margin-right: 0;
+}
+.redcafe-confirm-mainbackground{
+    background-color: #fff;
+    height: 130%;
+}
+.redcafe-confirmationtitle{
+    font-family: 'Poppins',sans-serif;
+    font-size: 25px;
+    padding-top: 5%;
+    color: #0D0D0D;
+    text-align: center;
+}
+.redcafe-bookingtxt{
+    font-family: 'Poppins',sans-serif;
+    margin-top: 5%;
+    color: #0D0D0D;
+    text-align: center;
+}
+.redcafe-confirmfooter{
+    margin-top: 0;
+}

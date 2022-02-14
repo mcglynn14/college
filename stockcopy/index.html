@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div id="index" data-role="page" dat-title="Stock program" data-theme="b">
+        <div data-role="header" data-position="fixed">
+            <h1>Stock program</h1>
+        </div>
+        <div data-role="content">
+            <h2>Stock program login</h2>
+            <label for="">Enter your username</label>
+            <input type="text" id="login">
+            <button onclick="">Login</button>
+            <label for="" id="attempts"></label>
+            <label for="" id="lock"></label>
+
+            <!-- Tempory link -->
+            <a href="#menu">Menu</a>
+        </div>
+        <div data-role="footer" data-position="fixed">
+            <h4>Stock program All Rights Reserved</h4>
+        </div>
+    </div>
+
+    <div id="menu" data-role="page" dat-title="Stock program" data-theme="b">
+        <div data-role="header" data-position="fixed">
+            <h1>Stock program</h1>
+        </div>
+        <div data-role="content">
+            <h2>Stock program menu</h2>
+            <label for="">Option 1: Display/add stock</label>
+            <label for="">Option 2: Delete stock</label>
+            <label for="">Option 3: Exit</label>
+            <label for="">Enter option</label>
+            <input type="text" id="">
+            <button onclick="">Submit</button>
+
+            <!-- Tempory link -->
+            <a href="#option1">Display/add stock</a>
+        </div>
+        <div data-role="footer" data-position="fixed">
+            <h4>Stock program All Rights Reserved</h4>
+        </div>
+    </div>
+
+    <div id="option1" data-role="page" dat-title="Stock program" data-theme="b">
+        <div data-role="header" data-position="fixed">
+            <h1>Stock program</h1>
+        </div>
+        <div data-role="content">
+            <h2>Option 1: Display/add stock</h2>
+            <label for="">Display stock</label>
+            <button onclick="">Display stock</button>
+            <label for=""></label>
+            <label for="">Add stock</label>
+            <input type="text" id="">
+            <button onclick="">Add stock</button>
+            <label for=""></label>
+
+            <!-- Tempory link -->
+            <a href="#option2">Delete stock</a>
+        </div>
+        <div data-role="footer" data-position="fixed">
+            <h4>Stock program All Rights Reserved</h4>
+        </div>
+    </div>
+    <div id="option2" data-role="page" dat-title="Stock program" data-theme="b">
+        <div data-role="header" data-position="fixed">
+            <h1>Stock program</h1>
+        </div>
+        <div data-role="content">
+            <h2>Option 2: Delete stock</h2>
+            <label for="">Delete stock</label>
+            <input type="text" id="">
+            <button onclick="">Delete stock</button>
+            <label for="">New balance</label>
+            <label for=""></label>
+
+            <!-- Tempory link -->
+            <a href="#option3">Exit</a>
+        </div>
+        <div data-role="footer" data-position="fixed">
+            <h4>Stock program All Rights Reserved</h4>
+        </div>
+    </div>
+
+    <div id="option3" data-role="page" dat-title="Stock program" data-theme="b">
+        <div data-role="header" data-position="fixed">
+            <h1>Stock program</h1>
+        </div>
+        <div data-role="content">
+            <h2>Option 3: Exit</h2>
+            <label for="">You have logged out of the system</label>
+
+            <!-- Tempory link -->
+            <a href="#option3">Exit</a>
+        </div>
+        <div data-role="footer" data-position="fixed">
+            <h4>Stock program All Rights Reserved</h4>
+        </div>
+    </div>
+</body>
+</html>

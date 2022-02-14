@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <script src="js/stock.js"></script>
+</head>
+<body>
+    <div id="index" data-role="page" data-title="Stock Program" data-theme="b">
+        <div data-role="header" data-position="fixed">
+            <h3>GCC Stock Program</h3>
+        </div>
+
+        <div data-role="content">
+            <h3>Login</h3>
+
+            <p>Enter your username - 3 attempts before you are locked out of the system</p>
+
+            <input type="text" id="userLogin">
+
+            <button>Submit Login</button>
+
+            <label for="" id="access">Access:</label>
+
+            <label for="" id="attempts">Attempts:</label>
+        </div>
+
+        <div data-role="footer" data-position="fixed">
+            <h3>GCC Stock Program</h3>
+        </div>        
+    </div>
+
+    <!-- menu page -->
+
+    <div id="menu" data-role="page" data-title="Stock Program" data-theme="b">
+        <div data-role="header" data-position="fixed">
+            <h3>GCC Stock Program</h3>
+        </div>
+
+        <div data-role="content">
+            <h3>Menu Options</h3>
+
+            <div data-role="collapsibleset" data-theme="b" data-content-theme="b">
+
+                <div data-role="collapsible">
+                    <h3>Display stock Levels</h3>
+
+                    <p id="stocktotal">Current stock levels are:</p>
+                </div>
+
+                <div data-role="collapsible">
+                    <h3>Add stock</h3>
+                    <p>Enter amount of stock to be added</p>
+
+                    <input type="text" id="add">
+
+                    <button>Add stock</button>
+
+                    <p id="confirmadd">Status:</p>
+                </div>
+
+                <div data-role="collapsible">
+                    <h3>Remove stock</h3>
+
+                    <p>Enter amount of stock to be removed</p>
+
+                    <p id="confirmremove"></p>
+                </div>
+
+                <div data-role="collapsible">
+                    <h3>Exit program</h3>
+
+                    <p>Press escape to quit</p>
+
+                    <button>Escape</button>
+                </div>
+            </div>            
+        </div>
+
+        <div data-role="footer" data-position="fixed">
+            <h3>GCC Stock Program</h3>
+        </div>        
+    </div>
+</body>
+</html>
