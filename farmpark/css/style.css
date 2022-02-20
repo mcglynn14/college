@@ -1,0 +1,319 @@
+/* Global css */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{ 
+    background-color: #8896BF;
+}
+header{
+    height: 70%;
+    background-color: #F2B705;
+}
+.farmpark-logotext{
+    font-family: 'Poppins',sans-serif;
+    font-size: 30px;
+    padding-top: 2%;
+}
+.farmpark-ul{
+    text-align: right;
+    margin-top: -2%;
+}
+.farmpark-li{
+    display: inline;
+}
+.farmpark-home{
+    font-family: 'Poppins',sans-serif;
+    color: #000;
+    text-decoration: none;
+}
+.farmpark-home:hover{
+    color: #fff;
+}
+.farmpark-zoo{
+    font-family: 'Poppins',sans-serif;
+    color: #000;
+    text-decoration: none;
+    margin-left: 2%;
+}
+.farmpark-zoo:hover{
+    color: #fff;
+}
+.farmpark-cafe{
+    font-family: 'Poppins',sans-serif;
+    color: #000;
+    text-decoration: none;
+    margin-left: 2%;
+}
+.farmpark-cafe:hover{
+    color: #fff;
+}
+.farmpark-shop{
+    font-family: 'Poppins',sans-serif;
+    color: #000;
+    text-decoration: none;
+    margin-left: 2%;
+}
+.farmpark-shop:hover{
+    color: #fff;
+}
+.farmpark-outdoor{
+    font-family: 'Poppins',sans-serif;
+    color: #000;
+    text-decoration: none;
+    margin-left: 2%;
+}
+.farmpark-outdoor:hover{
+    color: #fff;
+}
+.farmpark-contact{
+    font-family: 'Poppins',sans-serif;
+    color: #000;
+    text-decoration: none;
+    margin: 0 7% 0 2%;
+}
+.farmpark-contact:hover{
+    color: #fff;
+}
+/* Home css */
+.farmpark-welcome{
+    font-family: 'Poppins',sans-serif;
+    color: #fff;
+    text-align: center;
+}
+.farmpark-section{
+    display: flex;
+}
+.farmpark-homeimg1{
+    height: 35%;
+    width: 35%;
+    margin: 2% 0 0 1%;
+}
+.farmpark-hometxt{
+    display: inline-block;
+    font-family: 'Poppins',sans-serif;
+    font-size: 40px;
+    width: 35%;
+    color: #fff;
+    margin-left: 1%;
+}
+.farmpark-homeimg2{
+    height: 35%;
+    width: 35%;
+    margin: 2% 1% 0 0;
+}
+.farmpark-homefooter{
+    margin-top: 3%;
+    padding-bottom: 3%;
+    height: 40%;
+    width: 100%;
+    background-color: #F2B705;
+}
+.farmpark-socialiconlinks{
+    margin-left: 10%;
+    padding-top: 5%;
+    width: 20%;
+}
+.fa-facebook-f{
+    font-size: 50px;
+    color: #000;
+}
+.fa-facebook-f:hover{
+    color: #fff;
+}
+.fa-twitter{
+    font-size: 50px;
+    color: #000;
+    margin-left: 10%;
+}
+.fa-twitter:hover{
+    color: #fff;
+}
+.fa-instagram{
+    font-size: 50px;
+    color: #000;
+    margin-left: 10%;
+}
+.fa-instagram:hover{
+    color: #fff;
+}
+.farmpark-copyright{
+    text-align: center;
+}
+.farmpark-copy{
+    padding-top: 2%;
+    font-family: 'Poppins',sans-serif;
+    color: #000;
+}
+/* Zoo css */
+.farmpark-zootitle{
+    font-family: 'Poppins',sans-serif;
+    color: #fff;
+    text-align: center;
+}
+.farmpark-zooimg1{
+    height: 35%;
+    width: 35%;
+    margin: 2% 0 0 1%;
+}
+.farmpark-zootxt{
+    display: inline-block;
+    font-family: 'Poppins',sans-serif;
+    font-size: 40px;
+    width: 35%;
+    color: #fff;
+    margin: 2% 0 0 1%;
+}
+.farmpark-zooimg2{
+    height: 65%;
+    width: 40%;
+    margin: 2% 1% 0 0;
+}
+.farmpark-zoofooter{
+    margin-top: 3%;
+    padding-bottom: 3%;
+    height: 40%;
+    width: 100%;
+    background-color: #F2B705;
+}
+/* Cafe css */
+.farmpark-cafetitle{
+    font-family: 'Poppins',sans-serif;
+    color: #fff;
+    text-align: center;
+}
+.farmpark-cafeimg1{
+    height: 20%;
+    width: 30%;
+    margin: 2% 0 0 1%;
+}
+.farmpark-cafetxt{
+    display: inline-block;
+    font-family: 'Poppins',sans-serif;
+    font-size: 40px;
+    width: 35%;
+    color: #fff;
+    margin: 2% 0 0 1%;
+}
+.farmpark-cafeimg2{
+    height: 30%;
+    width: 30%;
+    margin: 11% 1% 0 0;
+}
+.farmpark-cafefooter{
+    margin-top: 3%;
+    padding-bottom: 3%;
+    height: 40%;
+    width: 100%;
+    background-color: #F2B705;
+}
+/* Shop css */
+.farmpark-shoptitle{
+    font-family: 'Poppins',sans-serif;
+    color: #fff;
+    text-align: center;
+}
+.farmpark-shopimg1{
+    height: 55%;
+    width: 30%;
+    margin: 11% 0 0 1%;
+}
+.farmpark-shoptxt{
+    display: inline-block;
+    font-family: 'Poppins',sans-serif;
+    font-size: 40px;
+    width: 35%;
+    color: #fff;
+    margin: 2% 0 0 1%;
+}
+.farmpark-shopimg2{
+    height: 55%;
+    width: 30%;
+    margin: 11% 1% 0 0;
+}
+.farmpark-shopfooter{
+    margin-top: 3%;
+    padding-bottom: 3%;
+    height: 40%;
+    width: 100%;
+    background-color: #F2B705;
+}
+/* Outdoor css */
+.farmpark-outdoortitle{
+    font-family: 'Poppins',sans-serif;
+    color: #fff;
+    text-align: center;
+}
+.farmpark-outdoorimg1{
+    height: 55%;
+    width: 30%;
+    margin: 11% 0 0 1%;
+}
+.farmpark-outdoortxt{
+    display: inline-block;
+    font-family: 'Poppins',sans-serif;
+    font-size: 40px;
+    width: 35%;
+    color: #fff;
+    margin: 2% 0 0 1%;
+}
+.farmpark-outdoorimg2{
+    height: 55%;
+    width: 30%;
+    margin: 11% 1% 0 0;
+}
+.farmpark-outdoorfooter{
+    margin-top: 3%;
+    padding-bottom: 3%;
+    height: 40%;
+    width: 100%;
+    background-color: #F2B705;
+}
+/* Contact css */
+.farmpark-contacttitle{
+    font-family: 'Poppins',sans-serif;
+    color: #fff;
+    text-align: center;
+}
+.farmpark-contactimg1{
+    height: 55%;
+    width: 30%;
+    margin: 0 0 0 1%;
+    position: absolute;
+}
+.farmpark-contactimg2{
+    height: 55%;
+    width: 30%;
+    margin: 30% 0 0 1%;
+    position: absolute;
+}
+.farmpark-contacttxt{
+    font-family: 'Poppins',sans-serif;
+    font-size: 40px;
+    width: 35%;
+    color: #fff;
+    margin: 2% 0 0 36%;
+}
+.farmpark-phone{
+    color: #fff;
+    text-decoration: none;
+}
+.farmpark-email{
+    color: #fff;
+    text-decoration: none;
+}
+.farmpark-map{
+    display: inline;
+    margin-left: 68%;
+    margin-top: -30%;
+    margin-bottom: 20%;
+}
+.farmpark-contactfooter{
+    margin-top: 10%;
+    padding-bottom: 3%;
+    height: 40%;
+    width: 100%;
+    background-color: #F2B705;
+}
