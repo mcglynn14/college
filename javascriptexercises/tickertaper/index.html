@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Ticker taper </title>
+<meta charset="UTF-8">
+<meta name="keywords" content="HTML, CSS, JavaScript">
+<meta name="description" content="Free Web tutorials">
+<meta name="author" content="Liam Mcglynn">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<Center>
+    <Form Name="marqueel">
+        <Input Name="text" Size=80 Value="Welcome to Glasgow Clyde College, Scotland's BEST College......">
+    </Form>
+</Center>
+<Script>
+/*Text box Ticker*/
+ScrollSpeed = 80
+ScrollChars = 1
+function ScrollMarquee() {
+    window.setTimeout('ScrollMarquee()',ScrollSpeed);
+    var msg = document.marquee1.text. value;
+    document.marquee1.text.value =
+    msg.substring (ScrollChars) +
+    msg.substring(0, ScrollChars);
+}
+ScrollMarquee()
+</Script>
+</body>
+</html>

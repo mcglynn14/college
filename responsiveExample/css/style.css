@@ -1,0 +1,90 @@
+/* Global settings across all devices */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    background: whitesmoke;
+}
+/* We build from mobile up, so all css outwith media queries are for mobile device */
+header{
+    width: 100%;
+    background: red;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.section-one, .section-two{
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    background: lightgrey;
+    justify-content: center;
+    margin: 2% 0;
+}
+.section-one div, .section-two div{
+    width: 90%;
+    height: 300px;
+    margin: 1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.section-one div{
+   
+    background: green;
+  
+}
+.section-two div{
+   
+    background: blue;
+    
+}
+.section-two div:nth-child(4){
+    display: none;
+}
+
+/* The media queries will be added below */
+
+/* tablet */
+@media (min-width: 767px){
+    .section-one div{
+        background-color: orangered;
+        width: 45%;
+    }
+    .section-two div{
+        background-color: olive;
+        width: 45%;
+    }
+    .section-two div:nth-child(4){
+        display: flex;
+    }
+}
+
+/* laptop */
+@media (min-width: 991px){
+    
+}
+/* desktop */
+@media (min-width: 1250px){
+    .section-one, .section-two{
+        max-width: 1100px;
+    }
+    .section-two div{
+        background-color: blueviolet;
+        width: 23%;
+    }
+}

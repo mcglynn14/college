@@ -78,3 +78,33 @@ footer{
     font-family: 'Poppins',sans-serif;
     color: #000;
 }
+
+.farmpark-zootitle{
+    font-family: 'Poppins',sans-serif;
+    color: #fff;
+    text-align: center;
+}
+
+.farmpark-cafetitle{
+    font-family: 'Poppins',sans-serif;
+    color: #fff;
+    text-align: center;
+}
+
+.farmpark-shoptitle{
+    font-family: 'Poppins',sans-serif;
+    color: #fff;
+    text-align: center;
+}
+
+.farmpark-outdoortitle{
+    font-family: 'Poppins',sans-serif;
+    color: #fff;
+    text-align: center;
+}
+
+.farmpark-contacttitle{
+    font-family: 'Poppins',sans-serif;
+    color: #fff;
+    text-align: center;
+}
