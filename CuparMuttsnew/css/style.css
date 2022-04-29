@@ -332,6 +332,9 @@ header{
     color: #fff;
     margin: 2% 0 0 36%;
 }
+iframe{
+    margin: 3% 0 0 3%;
+}
 .farmpark-phone{
     color: #fff;
     text-decoration: none;

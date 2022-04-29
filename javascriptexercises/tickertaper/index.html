@@ -9,23 +9,20 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-<Center>
-    <Form Name="marqueel">
-        <Input Name="text" Size=80 Value="Welcome to Glasgow Clyde College, Scotland's BEST College......">
-    </Form>
-</Center>
-<Script>
-/*Text box Ticker*/
-ScrollSpeed = 80
-ScrollChars = 1
-function ScrollMarquee() {
-    window.setTimeout('ScrollMarquee()',ScrollSpeed);
-    var msg = document.marquee1.text. value;
-    document.marquee1.text.value =
-    msg.substring (ScrollChars) +
-    msg.substring(0, ScrollChars);
-}
-ScrollMarquee()
-</Script>
+    <center>
+        <form name="marquee1">
+            <input name="text" size="80" value="Welcome to Glasgow Clyde College, Scotlands's BEST College......">
+        </form>
+    </center>
+    <script>
+        Scrollspeed = 100
+        Scrollchars = 1
+        function Scrollmarquee(){
+            window.setTimeout('Scrollmarquee()',Scrollspeed);
+            var msg = document.marquee1.text.value;
+            document.marquee1.text.value = msg.substring(Scrollchars) + msg.substring(0,Scrollchars);
+        }
+        Scrollmarquee()
+    </script>
 </body>
 </html>
