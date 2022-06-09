@@ -1,0 +1,414 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #DDEBD4;
+}
+.glasgowitalian-navbar{
+    background-color: #DEA17C;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    left: 0;
+    overflow: visible;
+    z-index: 2;
+}
+.glasgowitalian-logolink{
+    font-family: 'Dancing Script', cursive;
+    font-size: 24px;
+    margin-left: 2%;
+    margin-top: 3%;
+    color: #000;
+    text-decoration: none;
+    display: flex;
+}
+.glasgowitalian-navbartoggle{
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+    font-size: 24px;
+}
+ul#js-menu{
+    margin-top: 50px;
+    position: absolute;
+    width: 100%;
+}
+.glasgowitalian-mainnav{
+    display: none;
+}
+.active{
+    display: flex;
+    background-color: #DEA17C;
+    flex-direction: column;
+}
+.glasgowitalian-menulink{
+    font-family: 'Open Sans', sans-serif;
+    color: #000;
+    text-decoration: none;
+}
+.glasgowitalian-menulink:hover{
+    color: #fff;
+}
+.glasgowitalian-stafflink{
+    font-family: 'Open Sans', sans-serif;
+    color: #000;
+    text-decoration: none;
+}
+.glasgowitalian-stafflink:hover{
+    color: #fff;
+}
+.glasgowitalian-contactlink{
+    font-family: 'Open Sans', sans-serif;
+    color: #000;
+    text-decoration: none;
+}
+.glasgowitalian-contactlink:hover{
+    color: #fff;
+}
+.glasgowitalian-main{
+    margin-top: 15%;
+}
+.glasgowitalian-welcome{
+    font-family: 'Open Sans', sans-serif;
+    margin-left: 2%;
+}
+.glasgowitalian-mobileimg{
+    width: 100%;
+}
+.glasgowitalian-tabletimg{
+    display: none;
+}
+.glasgowitalian-desktopimg{
+    display: none;
+}
+.glasgowitalian-companyover{
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+}
+.glasgowitalian-companyovertext{
+    font-family: 'Open Sans', sans-serif;
+    padding: 0 3%;
+}
+.imglinks-outdiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.imglinks-innerdiv{
+    width: 90%;
+}
+.glasgowitalian-menuimg{
+    width: 100%;
+}
+.glasgowitalian-staffimg{
+    width: 100%;
+    margin-top: 5%;
+}
+.glasgowitalian-contactimg{
+    width: 100%;
+    margin-top: 5%;
+}
+.glasgowitalian-missionstate{
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+}
+.glasgowitalian-missionstatetext{
+    font-family: 'Open Sans', sans-serif;
+    padding: 0 3%;
+}
+footer{
+    background-color: #DEA17C;
+    padding: 10% 0;
+}
+.copyright{
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+}
+.glasgowitalian-sociallinks{
+    margin: 3% 0 0 0;
+}
+.fa-brands{
+    padding-left: 20%;
+    font-size: 32px;
+    color: #000;
+}
+.fa-brands:hover{
+    color: #fff;
+}
+.glasgowitalian-facebooklink{
+    width: 100%;
+}
+.glasgowitalian-menu{
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+}
+.glasgowitalian-antipast{
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+}
+.glasgowitalian-antipastimages{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin-left: 3%;
+}
+.glasgowitalian-antipastimg{
+    width: 100%;
+    /* height: 45%; */
+}
+.glasgowitalian-antipastimg2{
+    width: 45%;
+    height: 45%;
+    margin-top: 3%;
+}
+.glasgowitalian-antipastimg3{
+    width: 45%;
+    height: 45%;
+    margin-top: 3%;
+}
+.glasgowitalian-antipasttextsection{
+    display: flex;
+    flex-direction: column;
+}
+.glasgowitalian-antipasttext{
+    display: inline-block;
+}
+
+/* menu items */
+.menu-wrapper{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.menu-item{
+    width: 96%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3%;
+    padding: 2%;
+}
+h4{
+    font-family: 'Open Sans', sans-serif;
+}
+.food-description{
+    font-family: 'Open Sans', sans-serif;
+}
+/* staff page */
+.glasgowitalian-staff{
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+}
+.staff-wrapper{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.staff-item{
+    width: 96%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3%;
+    padding: 2%;
+    background-color: #fff;
+}
+.glasgowitalian-staffimg{
+    width: 78%;
+}
+.staff-description{
+    font-family: 'Open Sans', sans-serif;
+}
+.glasgowitalian-addresstitle{
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+}
+.glasgowitalian-addresstext{
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+}
+.glasgowitalian-contactnumbertitle{
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+}
+.glasgowitalian-phonenumber{
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+}
+.glasgowitalian-emailtitle{
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+}
+.glasgowitalian-emaillink{
+    font-family: 'Open Sans', sans-serif;
+    margin-left: 28%;
+    text-decoration: none;
+    color: #000;
+}
+.glasgowitalian-emaillink:hover{
+    color: #9a4e30;
+}
+.glasgowitalian-contactform{
+    text-align: center;
+}
+.glasgowitalian-contactname{
+    font-family: 'Open Sans', sans-serif;
+}
+.glasgowitalian-contactemail{
+    font-family: 'Open Sans', sans-serif;
+}
+.glasgowitalian-contactmessage{
+    font-family: 'Open Sans', sans-serif;
+}
+.glasgowitalian-submitinput{
+    position: absolute;
+    margin-top: 15%;
+    margin-left: -37%;
+    text-align: center;
+    background-color: #DEA17C;
+    border: 2px solid #DEA17C;
+    padding: 4% 8%;
+}
+.glasgowitalian-submitinput:hover{
+    background-color: #DDEBD4;
+}
+iframe{
+    margin-top: 30%;
+    width: 100%;
+}
+@media (min-width: 700px){
+    ul#js-menu{
+        margin-top: 50px;
+        position: absolute;
+        width: 100%;
+    }
+    .glasgowitalian-mobileimg{
+        display: none;
+    }
+    .glasgowitalian-tabletimg{
+        display: block;
+        width: 100%;
+    }
+    .glasgowitalian-welcome{
+        text-align: center;
+    }
+    .imglinks-outdiv{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .glasgowitalian-menuimg{
+        width: 30%;
+    }
+    .glasgowitalian-staffimg{
+        width: 30%;
+        margin-left: 4%;
+    }
+    .glasgowitalian-contactimg{
+        width: 30%;
+        margin-left: 4%;
+    }
+    .menu-item{
+        width: 45%;
+    }
+    .glasgowitalian-emaillink{
+        margin-left: 39%;
+    }
+    .glasgowitalian-submitinput{
+        margin-left: -22%;
+    }
+    .glasgowitalian-sociallinks{
+        margin: 3% 0 0 7%;
+    }
+}
+@media (min-width: 991px){
+    .glasgowitalian-navbartoggle{
+        display: none;
+    }
+    .glasgowitalian-logolink{
+        margin-top: 1%;
+    }
+    .glasgowitalian-mainnav{
+        display: flex;
+        justify-content: flex-end;
+        width: 70%;
+        align-items: center;
+    }
+    .imglinks-outdiv{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .glasgowitalian-menuimg{
+        width: 30%;
+    }
+    .glasgowitalian-staffimg{
+        width: 30%;
+        margin-left: 4%;
+    }
+    .glasgowitalian-contactimg{
+        width: 30%;
+        margin-left: 4%;
+    } 
+    li{
+        display: block;
+        padding-left: 18%;
+    }
+    ul#js-menu{
+        position: unset;
+        background: unset;
+        margin-top: unset;
+        height: unset;
+        width: 70%;
+    }
+    ul#js-menu{
+        margin-top: 1.5%;
+        position: absolute;
+        width: 97%;
+        text-align: center;
+    }
+    .active{
+        display: none;
+    }
+    .glasgowitalian-tabletimg{
+        display: none;
+    }
+    .glasgowitalian-desktopimg{
+        display: block;
+        width: 100%;
+    }
+    .menu-item{
+        width: 33%
+    }
+    .staff-item{
+        width: 27%;
+        margin-left: 3%;
+    }
+    .glasgowitalian-emaillink{
+        margin-left: 42%;
+    }
+    .glasgowitalian-submitinput{
+        margin-left: -17%;
+        padding: 3% 6%;
+    }
+    .glasgowitalian-sociallinks{
+        margin: 3% 0 0 10%;
+    }
+}
+
