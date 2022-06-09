@@ -1,0 +1,49 @@
+<head>
+    <script type="text/javascript" src="../js/kenburns.js"></script>
+        <script type="text/javascript">
+            var titles = ["Barney running with walker behind",
+                          "Tangles being walked by dog walker",
+                          "Rosie being walked in park by dog walker",
+                          "Ben being walked on a path with sunflowers by dog walker",
+                          "Bailey being walked in forrest by dog walker",
+                          "Jinky being walked in a field by dog walker"]
+        
+            $(document).ready(function() {
+                $('#kenburns-slideshow').Kenburns({
+                    images: [
+                        "../graphics/photos/gallery1.jpg",
+                        "../graphics/photos/gallery2.jpg",
+                        "../graphics/photos/gallery3.jpg",
+                        "../graphics/photos/gallery4.jpg",
+                        "../graphics/photos/gallery5.jpg",
+                        "../graphics/photos/gallery6.jpg"
+                    ],
+                    urls: [
+                        "https://www.petsathome.com/",
+                        "https://www.petsathome.com/",
+                        "https://www.petsathome.com/",
+                        "https://www.petsathome.com/",
+                        "https://www.petsathome.com/",
+                        "https://www.petsathome.com/"
+                    ],
+                    scale:0.75,
+                    duration:5000,
+                    fadeSpeed:1000,
+                    ease3d:'cubic-bezier(0.445, 0.050, 0.550, 0.950)',
+        
+                    onSlideComplete: function(){
+                        $('#slide-title').html(titles[this.getSlideIndex()]);
+                    },
+                    onLoadingComplete: function(){
+                        //$('#status').html("Loading Complete");
+                    }
+        
+                });
+            })
+            </script>
+</head>
+
+<body>
+    <div id="kenburns-slideshow"></div>
+	<div id="slide-title"></div>
+</body>

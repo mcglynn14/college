@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Name of Exercise </title>
+<meta charset="UTF-8">
+<meta name="keywords" content="HTML, CSS, JavaScript">
+<meta name="description" content="Free Web tutorials">
+<meta name="author" content="John Doe">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+	<script type="text/javascript" src="kenburns.js"></script>
+	
+	<script type="text/javascript">
+	var titles = ["Rustic Walls",
+				  "Two Love Birds",
+				  "Beauty and Fame",
+				  "Magic Hour at Sands Beach",
+				  "Floral Arrangements"];
+
+	$(document).ready(function() {
+	    $('#kenburns-slideshow').Kenburns({
+	    	images: [
+	    		"bluewall.jpg",
+	    		"cutebirds.jpg",
+	    		"josie.jpg",
+	    		"landscape.jpg",
+	    		"table.jpg"
+	    	],
+			urls: [
+				"https://www.bbc.co.uk",
+				"https://www.bbc.co.uk",
+				"https://www.bbc.co.uk",
+				"https://www.bbc.co.uk",
+				"https://www.bbc.co.uk",
+			],
+	    	scale:0.75,
+	    	duration:5000,
+	    	fadeSpeed:1000,
+	    	ease3d:'cubic-bezier(0.445, 0.050, 0.550, 0.950)',
+
+	    	onSlideComplete: function(){
+	    		$('#slide-title').html(titles[this.getSlideIndex()]);
+	    	},
+	    	onLoadingComplete: function(){
+	    		//$('#status').html("Loading Complete");
+	    	}
+
+	    });
+	});
+	</script>
+</head>
+<body>
+<div id="kenburns-slideshow"></div>
+	<div id="slide-title"></div>
+</body>
+</html>

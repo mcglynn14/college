@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="buttons">
+            <button class="button active" onclick="fontchange(18)">A</button>
+            <button class="button" onclick="fontchange(23)">A</button>
+            <button class="button" onclick="fontchange(27)">A</button>
+        </div>
+        <div class="text">
+            <p id="para">You can learn how to create a change font size using javascript with a button. This will help users to enlarge or decrease text thurs helping with accessibility</p>
+        </div>
+    </div>
+    <script>
+        function fontchange(n){
+            var paragraph = document.getElementById('para');
+            paragraph.style.fontSize = n + "px";
+        }
+        var buttons = document.querySelector(".buttons");
+        var button = buttons.querySelectorAll(".button");
+        for(var i = 0; i < button.length; i++){
+            button[i].addEventListener('click', function(){
+                var current = document.getElementsByClassName('active');
+                current[0].className = current[0].className.replace("active", "");
+                this.className += " active"
+            });
+        }
+    </script>
+</body>
+</html>
