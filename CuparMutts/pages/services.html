@@ -3,62 +3,85 @@
     <head>
         <title>Cupar Mutts' Services</title>
 		<meta charset="UTF-8">
-		<meta name="description" content="Cupar Mutts doggy day care based in Cupar, Scotland.">
+		<meta name="description" content="Cupar Mutts dog walking service based in Cupar, Scotland.">
 		<meta name="keywords" content="Cupar Mutts' Services | Doggy Day Care | Dog Walkers | Cupar | Scotland">
-		<meta name="author" content="L. Smart | SQA">
-
-        <link type="text/css" rel="stylesheet" href="../css/styles.css" />
+		<meta name="author" content="Liam mcglynn">
+        <link rel="icon" href="../graphics/favicon.ico">
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="../assets/fontawesome/css/all.css">
+        <link href="../assets/fontawesome/webfonts/">
     </head>
 
-    <body>
-        <div id="wrapper">
-            <div id="top-section">
-                <div class="logo">
-                    <a href="../index.html" title="Home link"></a>
-                </div>
-
-                <div id="main-menu">
-                    <ul>
-                        <li><a href="./services.html" title="Services link">Services</a></li>
-                        <li><a href="./gallery.html" title="Gallery link">Gallery</a></li>
-                        <li><a href="./contact.html" title="Contact link">Contact</a></li>
-                    </ul>
-                </div>
-            </div>
-
-            <div id="middle-section">
-                <h1>Services</h1>
-                <p><span>Cupar Mutts</span> offers a range of first class <span>services</span>. These include:</p>
-                
-                <ul>
-                    <li>Full day care (&pound;12)</li>
-                    <li>Half day care (&pound;8)</li>
-                    <li>Day and night boarding (&pound;20 per night)</li>
-                    <li>Dog walking (&pound;8)</li>
-                    <li>Collection and drop-off service (limited space so book early)
-                        (included in Full day care, otherwise &pound;5)</li>
-                    <li>Intensive adult dog re-socialising training (&pound;30 per session)</li>
-                    <li>Grooming (&pound;15-&pound;60 depending on treatment)</li>
-                    <li>Training (&pound;20 per session)</li>
-                </ul>
-            </div>
-
-            <div id="bottom-section">
-                <div class="accessibility">
-                    <ul>
-                        <li><a href="./accessibility.html" title="Accessibility link">Accessibility</a></li>
-                        <li><a href="./sitemap.html" title="Sitemap link">Sitemap</a></li>
-                    </ul>
-                </div>
-                <div class="social-media">
-                    <ul>
-                        <li><a href="https://www.instagram.com/CuparMutts" title="Instagram link"></a></li>
-                        <li class="Twitter"><a href="https://www.twitter.com/CuparMutts" title="Twitter link"></a></li>
-                    </ul>
-                </div>
-                <div class="copyright">&copy; Your Name</div>
-            </div>
+<body>
+    <header>
+        <div class="cuparmutts-logodiv">
+            <a href="../index.html" class="cuparmutts-logolink">
+                    <img src="../graphics/logo.png" alt="" class="cuparmutts-logo">
+            </a>
         </div>
-    </body>
-<p>
+        <nav class="cuparmutts-nav">
+            <ul class="cuparmutts-ul">
+                <li class="cuparmutts-li">
+                    <a href="services.html" class="cuparmutts-services">Services</a>
+                </li>
+                <li class="cuparmutts-li">
+                    <a href="gallery.html" class="cuparmutts-gallery">Gallery</a>
+                </li>
+                <li class="cuparmutts-li">
+                    <a href="contact.html" class="cuparmutts-contact">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+        <main>
+            <h1 class="cuparmutts-servicestitle">Services</h1>
+            <section class="cuparmutts-section">
+                <p class="cuparmutts-servicestxt" id="accessibilitytext">Cupar Mutts offers a range of first class services. These include:</p>
+                <ul class="cuparmutts-servicesul">
+                    <li class="cuparmutts-servicesli">Full day care (£12)</li>
+                    <li class="cuparmutts-servicesli">Half day care (£8)</li>
+                    <li class="cuparmutts-servicesli">Day and night boarding (£20 per night)</li>
+                    <li class="cuparmutts-servicesli">Dog walking (£8)</li>
+                    <li class="cuparmutts-servicesli">Collection and drop-off service (limited space so book early) (included in Full day care, otherwise £5)</li>
+                    <li class="cuparmutts-servicesli">Intensive adult dog re-socialising training (£30 per session)</li>
+                    <li class="cuparmutts-servicesli">Grooming (£15-£60 depending on treatment)</li>
+                    <li class="cuparmutts-servicesli">Training (£20 per session)</li>
+                </ul>
+            </section>
+            <div class="buttons">
+                <button class="button active" onclick="fontchange(18)">A</button>
+                <button class="button" onclick="fontchange(23)">A</button>
+                <button class="button" onclick="fontchange(27)">A</button>
+            </div>
+            <script>
+                function fontchange(n){
+                    var paragraph = document.getElementById('accessibilitytext');
+                    paragraph.style.fontSize = n + "px";
+                }
+                var buttons = document.querySelector(".buttons");
+                var button = buttons.querySelectorAll(".button");
+                for(var i = 0; i < button.length; i++){
+                    button[i].addEventListener('click', function(){
+                        var current = document.getElementsByClassName('active');
+                        current[0].className = current[0].className.replace("active", "");
+                        this.className += " active"
+                    });
+                }
+            </script>
+        </main>
+        <footer class="cuparmutts-homefooter">
+            <div class="cuparmutts-socials">
+                <div class="cuparmutts-socialiconlinks">
+                    <a href="https://facebook.com" class="cuparmutts-facebooklink"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://twitter.com" class="cuparmutts-twitterlink"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://instagram.com" class="cuparmutts-instalink"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="cuparmutts-copyright">
+                <p class="cuparmutts-copy">&copy; 2022 CuparMutts</p>
+            </div>
+            <a href="accessibility.html" class="cuparmutts-accessibilitylink">Accessibility</a>
+        </footer>
+</body>
+
 </html>

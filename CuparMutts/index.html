@@ -1,61 +1,83 @@
 <!DOCTYPE html>
-<html lang="en-gb">
-    <head>
-        <title>Cupar Mutts</title>
-		<meta charset="UTF-8">
-		<meta name="description" content="Cupar Mutts doggy day care based in Cupar, Scotland.">
-		<meta name="keywords" content="Cupar Mutts | Doggy Day Care | Dog Walkers | Cupar | Scotland">
-		<meta name="author" content="Your Name | Student at Glasgow Clyde College ">
-
-        <link type="text/css" rel="stylesheet" href="./css/styles.css" />
-    </head>
-
-    <body>
-        <div id="wrapper">
-            <div id="top-section">
-                <div class="logo">
-                    <a href="index.html" title="Home link"></a>
-                </div>
-
-                <div id="main-menu">
-                    <ul>
-                        <li><a href="./pages/services.html" title="Services link">Services</a></li>
-                        <li><a href="./pages/gallery.html" title="Gallery link">Gallery</a></li>
-                        <li><a href="./pages/contact.html" title="Contact link">Contact</a></li>
-                    </ul>
-                </div>
-            </div>
-
-            <div id="middle-section">
-                <h1>Cupar Mutts</h1>
-                <p><span>Cupar Mutts</span> is a Doggy Day care business based in <span>Cupar</span>.</p>
-                <p>The company was established in 2012, and has looked after dogs from the North East of Fife ever since.
-                   Our Doggy Day Care is excellent for socilaising your dog. many dog owners forget that it is not
-                    natural for their dogs to be in contact with a human all day, every day. Cupar Mutts</p>
-                <ul>
-                    <li>Helps your dog learn how to behave around other dogs</li>
-                    <li>Tires your dog out for when you collect at the end of the day</li>
-                    <li>Provides basic training for your dog</li>
-                    <li>Walks your dog in a large group along the Fife coast when weather permits</li>
-                </ul>
-            </div>
-
-            <div id="bottom-section">
-                <div class="accessibility">
-                    <ul>
-                        <li><a href="./pages/accessibility.html" title="Accessibility link">Accessibility</a></li>
-                        <li><a href="./pages/sitemap.html" title="Sitemap link">Sitemap</a></li>
-                    </ul>
-                </div>
-                <div class="social-media">
-                    <ul>
-                        <li><a href="https://www.instagram.com/CuparMutts" title="Instagram link"></a></li>
-                        <li class="Twitter"><a href="https://www.twitter.com/CuparMutts" title="Twitter link"></a></li>
-                    </ul>
-                </div>
-                <div class="copyright">&copy; Your Name</div>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Cupar Mutts dog walking service based in Cupar, Scotland.">
+	<meta name="keywords" content="Cupar Mutts' Services | Doggy Day Care | Dog Walkers | Cupar | Scotland">
+	<meta name="author" content="Liam mcglynn">
+    <link rel="icon" href="graphics/favicon.ico">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="assets/fontawesome/css/all.css">
+    <link href="assets/fontawesome/webfonts/">
+    <title>Cupar Mutts</title>
+</head>
+<body>
+    <header>
+        <div class="cuparmutts-logodiv">
+            <a href="index.html" class="cuparmutts-logolink">
+                <img src="graphics/logo.png" alt="" class="cuparmutts-logo">
+            </a>
+        </div>
+        <nav class="cuparmutts-nav">
+            <ul class="cuparmutts-ul">
+                <li class="cuparmutts-li">
+                    <a href="pages/services.html" class="cuparmutts-services">Services</a>
+                </li>
+                <li class="cuparmutts-li">
+                    <a href="pages/gallery.html" class="cuparmutts-gallery">Gallery</a>
+                </li>
+                <li class="cuparmutts-li">
+                    <a href="pages/contact.html" class="cuparmutts-contact">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- ticker taper html -->
+        <center>
+            <form name="marquee1">
+                <input class="cuparmutts-tickertaper" name="text" size="80" value="Latest News: We are very proud to announce that our new website is now launched, great offers 
+                available, why not come and visit us soon, we will continue to post updates via our Instagram and 
+                Twitters accounts, but our main platform will be this new website. ">
+            </form>
+        </center>
+        <!-- ticker taper script code -->
+        <script>
+            Scrollspeed = 100
+            Scrollchars = 1
+            function Scrollmarquee(){
+                window.setTimeout('Scrollmarquee()',Scrollspeed);
+                var msg = document.marquee1.text.value;
+                document.marquee1.text.value = msg.substring(Scrollchars) + msg.substring(0,Scrollchars);
+            }
+            Scrollmarquee()
+        </script>
+        <h1 class="cuparmutts-welcome">Welcome to CuparMutts</h1>
+        <section class="cuparmutts-section">
+            <p class="cuparmutts-hometxt">Cupar Mutts is a Doggy Day care business based in Cupar.</p>
+            <p class="cuparmutts-hometxt2">The company was established in 2012, and has looked after dogs from the North East of Fife ever since. Our Doggy Day Care is excellent for socilaising your dog. many dog owners forget that it is not natural for their dogs to be in contact with a human all day, every day. Cupar Mutts</p>
+            <ul class="cuparmutts-homeul">
+                <li class="cuparmutts-homeli">Helps your dog learn how to behave around other dogs</li>
+                <li class="cuparmutts-homeli">Tires your dog out for when you collect at the end of the day</li>
+                <li class="cuparmutts-homeli">Provides basic training for your dog</li>
+                <li class="cuparmutts-homeli">Walks your dog in a large group along the Fife coast when weather permits</li>
+            </ul>
+        </section>
+    </main>
+    <footer class="cuparmutts-homefooter">
+        <div class="cuparmutts-socials">
+            <div class="cuparmutts-socialiconlinks">
+                <a href="https://facebook.com" class="cuparmutts-facebooklink"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://twitter.com" class="cuparmutts-twitterlink"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://instagram.com" class="cuparmutts-instalink"><i class="fa-brands fa-instagram"></i></a>
             </div>
         </div>
-    </body>
-<p>
+        <div class="cuparmutts-copyright">
+            <p class="cuparmutts-copy">&copy; 2022 CuparMutts</p>
+        </div>
+        <a href="pages/accessibility.html" class="cuparmutts-accessibilitylink">Accessibility</a>
+    </footer>
+</body>
 </html>

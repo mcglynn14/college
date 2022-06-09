@@ -3,62 +3,100 @@
     <head>
         <title>Cupar Mutts' Gallery</title>
 		<meta charset="UTF-8">
-		<meta name="description" content="Cupar Mutts doggy day care based in Cupar, Scotland.">
+		<meta name="description" content="Cupar Mutts dog walking service based in Cupar, Scotland.">
 		<meta name="keywords" content="Cupar Mutts' Gallery | Doggy Day Care | Dog Walkers | Cupar | Scotland">
-		<meta name="author" content="L. Smart | SQA">
-
-        <link type="text/css" rel="stylesheet" href="../css/styles.css" />
+		<meta name="author" content="Liam mcglynn">
+        <link rel="icon" href="../graphics/favicon.ico">
+        <link type="text/css" rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="../assets/fontawesome/css/all.css">
+        <link href="../assets/fontawesome/webfonts/">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script type="text/javascript" src="../js/kenburns.js"></script>
+        <script type="text/javascript">
+            var titles = ["Barney running with walker behind",
+                          "Tangles being walked by dog walker",
+                          "Rosie being walked in park by dog walker",
+                          "Ben being walked on a path with sunflowers by dog walker",
+                          "Bailey being walked in forrest by dog walker",
+                          "Jinky being walked in a field by dog walker"]
+        
+            $(document).ready(function() {
+                $('#kenburns-slideshow').Kenburns({
+                    images: [
+                        "../graphics/photos/gallery1.jpg",
+                        "../graphics/photos/gallery2.jpg",
+                        "../graphics/photos/gallery3.jpg",
+                        "../graphics/photos/gallery4.jpg",
+                        "../graphics/photos/gallery5.jpg",
+                        "../graphics/photos/gallery6.jpg"
+                    ],
+                    urls: [
+                        "https://www.petsathome.com/",
+                        "https://www.petsathome.com/",
+                        "https://www.petsathome.com/",
+                        "https://www.petsathome.com/",
+                        "https://www.petsathome.com/",
+                        "https://www.petsathome.com/"
+                    ],
+                    scale:0.75,
+                    duration:5000,
+                    fadeSpeed:1000,
+                    ease3d:'cubic-bezier(0.445, 0.050, 0.550, 0.950)',
+        
+                    onSlideComplete: function(){
+                        $('#slide-title').html(titles[this.getSlideIndex()]);
+                    },
+                    onLoadingComplete: function(){
+                        //$('#status').html("Loading Complete");
+                    }
+        
+                });
+            })
+            </script>
     </head>
-
-    <body>
-        <div id="wrapper">
-            <div id="top-section">
-                <div class="logo">
-                    <a href="../index.html" title="Home link"></a>
-                </div>
-
-                <div id="main-menu">
-                    <ul>
-                        <li><a href="./services.html" title="Services link">Services</a></li>
-                        <li><a href="./gallery.html" title="Gallery link">Gallery</a></li>
-                        <li><a href="./contact.html" title="Contact link">Contact</a></li>
-                    </ul>
-                </div>
-            </div>
-
-            <div id="middle-section">
-                <h1>Gallery</h1>
-                <p>The dogs at <span>Cupar Mutts</span> have a great time socialising with their canine <span>friends</span>.
-                    This webpage contains <span>photos</span> of our regular canine residents having <span>fun</span> and <span>socialising</span>.</p>
-                
+<body>
+    <header>
+        <div class="cuparmutts-logodiv">
+            <a href="../index.html" class="cuparmutts-logolink">
+                <img src="../graphics/logo.png" alt="" class="cuparmutts-logo">
+            </a>
+        </div>
+        <nav class="cuparmutts-nav">
+            <ul class="cuparmutts-ul">
+                <li class="cuparmutts-li">
+                    <a href="services.html" class="cuparmutts-services">Services</a>
+                </li>
+                <li class="cuparmutts-li">
+                    <a href="gallery.html" class="cuparmutts-gallery">Gallery</a>
+                </li>
+                <li class="cuparmutts-li">
+                    <a href="contact.html" class="cuparmutts-contact">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1 class="cuparmutts-gallerytitle">Gallery</h1>
+        <section class="cuparmutts-section">
+                <p class="cuparmutts-gallerytxt">The dogs at Cupar Mutts have a great time socialising with their canine friends. This webpage contains photos of our regular canine residents having fun and socialising.</p>
                 <div class="gallery">
-                    <img alt="Barney the Lab cross, Tangles the Lurcher and Rosie the cairn Terrier" src="../graphics/photos/Barney_Tangles_Rosie.jpg" />
-                    <img alt="Barney the Lab cross" src="../graphics/photos/Barney1.jpg" />
-                    <img alt="Ben the Labrador and Bailey the Collie" src="../graphics/photos/Ben_Bailey.jpg" />
-                    <img alt="Jinky the Shih Tzu" src="../graphics/photos/Jinky.jpg" class="last" />
-                    <img alt="Rosie the Cairn Terrier" src="../graphics/photos/Rosie.jpg" />
-                    <img alt="Tangles the Lurcher and Barney the Lab cross" src="../graphics/photos/Tangles_Barney.jpg" />
-                    <img alt="Barney the Lab cross and Tangles the Lurcher running on the beach" src="../graphics/photos/Barney_Tangles_beach.jpg" />
-                    <img alt="Barney the Lab cross and Tangles the Lurcher standing on a fallen tree" src="../graphics/photos/Barney_Tangles_tree.jpg" class="last" />
+                    <div id="kenburns-slideshow"></div>
+	                <div id="slide-title"></div>
                 </div>
-            </div>
-
-            <div id="bottom-section">
-                <div class="accessibility">
-                    <ul>
-                        <li><a href="./accessibility.html" title="Accessibility link">Accessibility</a></li>
-                        <li><a href="./sitemap.html" title="Sitemap link">Sitemap</a></li>
-                    </ul>
-                </div>
-                <div class="social-media">
-                    <ul>
-                        <li><a href="https://www.instagram.com/CuparMutts" title="Instagram link"></a></li>
-                        <li class="Twitter"><a href="https://www.twitter.com/CuparMutts" title="Twitter link"></a></li>
-                    </ul>
-                </div>
-                <div class="copyright">&copy; Your Name</div>
+            </section>
+    </main>
+    <footer class="cuparmutts-homefooter">
+        <div class="cuparmutts-socials">
+            <div class="cuparmutts-socialiconlinks">
+                <a href="https://facebook.com" class="cuparmutts-facebooklink"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://twitter.com" class="cuparmutts-twitterlink"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://instagram.com" class="cuparmutts-instalink"><i class="fa-brands fa-instagram"></i></a>
             </div>
         </div>
-    </body>
-<p>
+        <div class="cuparmutts-copyright">
+            <p class="cuparmutts-copy">&copy; 2022 CuparMutts</p>
+        </div>
+        <a href="accessibility.html" class="cuparmutts-accessibilitylink">Accessibility</a>
+    </footer>
+</body>
 </html>
