@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- name: liam mcglynn 
+        student number: 20117993
+        class: HND web intro to software development 
+        program: converts euros to pounds and then euros to dollars  -->
+</head>
+<body>
+    <script>
+        // input
+
+        var initialAmount = 0;
+
+        // assign value of previous funtion to variable
+
+        var euro = 0;
+
+        // input
+
+        initialAmount = parseInt(prompt("Enter an ammount in pounds stering"));
+
+        // function to convert stering to euros
+
+        function stertoEur(initialAmount)
+        {
+            var e = initialAmount;
+            return e * 1.09;
+
+        }
+
+        euro = (stertoEur(initialAmount));
+
+        // output for sterling to euro
+
+        document.write(initialAmount + " in sterling " + "converted to euro's " + " = " + euro.toFixed(2) + "<br>" + "<br>");
+
+        // function euro to dollars
+
+        function eurotoDollars(euro)
+        {
+            return euro * 1.17;
+        }
+
+        document.write(euro.toFixed(2) + " in euro's " + "converted to US Dollar's " + " = " + eurotoDollars(euro).toFixed(2));
+    </script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- name: liam mcglynn 
+        student number: 20117993
+        class: HND web intro to software development 
+        program: converts temperature from Fahrenheit to Celsius and then Celsius to Fahrenheit -->
+</head>
+<body>
+    <script>
+        var c = 0;
+        var fa = 0;
+
+        fa = parseFloat(prompt("Enter a temperature"));
+
+        function FtoC(fa)
+        {
+            var f = fa;
+            return (f-32) *5/9;
+        }
+
+        c = FtoC(fa);
+
+        document.write(c + "<br>");
+        
+        function CtoF(c)
+        {
+            return c*9/5 + 32;
+        }
+
+        document.write(CtoF(c))
+    </script>
+</body>
+</html>
