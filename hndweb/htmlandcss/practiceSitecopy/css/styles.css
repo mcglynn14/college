@@ -195,3 +195,86 @@ map{
         padding: 10px;
     }
 }
+section.picture{
+    justify-content: center;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+}
+section.picture2{
+    justify-content: center;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+}
+section.picture3{
+    justify-content: center;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+}
+section.picture4{
+    justify-content: center;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+}
+.pics{
+    width: 11%;
+    margin-right: 2%;
+}
+section.picture > .content1{
+    width: 60%;
+    background-color: #fff;
+    opacity: 0.9;
+    height: fit-content;
+}
+section.picture2 > .content1{
+    width: 60%;
+    background-color: #fff;
+    opacity: 0.9;
+    height: fit-content;
+}
+section.picture3 > .content1{
+    width: 60%;
+    background-color: #fff;
+    opacity: 0.9;
+    height: fit-content;
+}
+section.picture4 > .content1{
+    width: 60%;
+    background-color: #fff;
+    opacity: 0.9;
+    height: fit-content;
+}
+
+
+.pics-equipment{
+    width: 11%;
+    margin-left: 2%;
+}
+section.picture2-flex{
+    justify-content: center;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin-top: 2%;
+}
+section.picture4-flex{
+    justify-content: center;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin-top: 2%;
+}
+.pics-equipment.flex{
+    width: 9%;
+    /* margin-left: 2%; */
+    margin-top: 2%;
+}
