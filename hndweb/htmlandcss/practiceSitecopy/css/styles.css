@@ -225,7 +225,6 @@ section.picture4-flex{
 }
 .pics-equipment.flex{
     width: 9%;
-    /* margin-left: 2%; */
     margin-top: 2%;
 }
 @media screen and (max-width: 425px){
@@ -269,6 +268,12 @@ section.picture4-flex{
     section.picture4{
         padding-bottom: 22%;
     }
+    .pics-equipment{
+        width: 33%;
+    }
+    .pics-equipment.flex{
+        width: 40%;
+    }
 }
 @media screen and (max-width: 768px){
     aside > .form1{
@@ -284,5 +289,11 @@ section.picture4-flex{
     }
     section.picture4{
         padding-bottom: 22%;
+    }
+    .pics-equipment{
+        width: 16%;
+    }
+    .pics-equipment.flex{
+        width: 16%;
     }
 }
