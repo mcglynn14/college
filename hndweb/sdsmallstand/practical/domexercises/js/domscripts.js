@@ -23,3 +23,16 @@ function classCode(){
 
     document.getElementById("body").style.backgroundColor = "black";
 }
+
+// input.html
+function multiply(){
+
+    var input1 = parseInt(document.getElementById("num1").value);
+    var input2 = parseInt(document.getElementById("num2").value);
+
+    var total = input1 * input2;
+
+    document.getElementById("total").innerHTML = total;
+
+
+}
