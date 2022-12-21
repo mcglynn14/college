@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/quizarray.js"></script>
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <title>Document</title>
+</head>
+<body onload="questions()">
+    <div data-role="page" data-title="quiz1" id="index" data-theme="b">
+
+        <div data-role="header" data-position="fixed">
+            <h1>Practice Quiz Array</h1>
+
+
+        </div>
+
+        <div data-role="content">
+            <label for="">Q1: How Many Reindeer Does Santa Have?</label>
+
+            <input type="text" id="userq1">
+            <label for="" id="q1feedback">Answer:</label></label><br><br><br><br>
+            <button onclick="checkAnswers()">Submit Answers</button>
+            <a href="#secondpage">Second Page</a>
+        </div>
+
+        <div data-role="footer" data-position="fixed">
+            <h1>Practice Quiz Array</h1>
+        </div>
+    </div>
+
+    <!-- *********************Second Page ************************** -->
+
+    <div data-role="page" data-title="quiz1" id="secondpage" data-theme="b">
+
+        <div data-role="header" data-position="fixed">
+            <h1>Second Page</h1>
+
+
+        </div>
+
+        <div data-role="content">
+            <label for="" id="p2q0"></label>
+
+            <input type="text" id="p2userq0">
+            <label for="" id="p2q0feedback">Answer:</label></label><br><br><br><br>
+
+            <label for="" id="p2q1"></label>
+
+            <input type="text" id="p2userq1">
+            <label for="" id="p2q1feedback">Answer:</label></label><br><br><br><br>
+
+            <button onclick="arrayAnswers()">Submit Answers</button>
+            <!-- <label for="" id="finalscore"></label> -->
+            <a href="#index">Index</a>
+        </div>
+
+        <div data-role="footer" data-position="fixed">
+            <h1>Second Page</h1>
+        </div>
+    </div>
+</body>
+</html>
