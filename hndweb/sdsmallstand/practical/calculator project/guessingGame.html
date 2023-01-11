@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/guessingGame.js"></script>
+</head>
+<body>
+
+    
+
+    
+ <div data-role="page" data-title="Guessing Game" id="guessingGame" data-theme="a">
+    <div data-role="header" data-position = "fixed">
+        <h4>Guessing Game</h4>
+    </div>
+
+    <div data-role="content" class="ui-content" data-position="fixed">
+
+    <button class="ui-btn" onclick="generate()">Generate Numbers</button>
+
+    <label id="num1"></label>
+
+    <label>X</label>
+
+    <label id="num2"></label>
+
+    <label class="ui-mobile">=</label> 
+
+    <input class="ui-input-text" type="text" id="UserInput">
+
+    <button class="ui-btn" onclick="guessNumber()">Submit</button>
+
+    <label id="result"></label>
+
+    <label id="TimesTable"></label>
+
+            
+         
+
+    </div>
+
+    <div data-role="footer" data-position = "fixed">
+        <h4>Game</h4>
+    </div>
+</div>
+</body>
+</html>

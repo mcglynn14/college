@@ -1,0 +1,16 @@
+.ui-content{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: center;
+}
+button.ui-btn{
+    width: 20%;
+    margin-right: 2%;
+}
+.ui-mobile label{
+    margin-right: 1%;
+}
+.ui-input-text{
+    margin-right: 2%;
+}
