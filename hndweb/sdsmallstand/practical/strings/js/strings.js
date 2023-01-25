@@ -36,3 +36,9 @@ document.write("Low string is: " + lower);
 document.write("<br>");
 
 document.write("Search term is " + lower);
+
+var pos = low.indexOf(lower);
+
+document.write("<br>");
+
+document.write(pos);
