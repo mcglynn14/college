@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/student.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <p id="d2"></p>
+
+    <p id="d3"></p>
+
+    <script>
+        document.getElementById("d2").innerHTML = student.id + "<br>" + student.surname + "<br>" + student.firstname + "<br>" + student.dob + "<br>" + student.status + "<hr>";
+
+        document.getElementById("d3").innerHTML = student[1].id + "<br>" + student[1].surname + "<br>" + student[1].firstname + "<br>" + student[1].dob + "<br>" + student[1].status + "<hr>";
+    </script>
+</body>
+</html>
