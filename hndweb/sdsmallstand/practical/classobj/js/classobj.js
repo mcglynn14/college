@@ -2,7 +2,7 @@ var set = 0;
 var record = [];
 var option;
 
-class todo{
+class Todo{
     constructor(student, course, dob, email){
         this.student = student;
         this.course = course;
@@ -21,10 +21,10 @@ function build(){
 
     record.push(rec);
 
-    document.getElementById("student").value="";
-    document.getElementById("course").value="";
-    document.getElementById("dob").value="";
-    document.getElementById("email").value="";
+    // document.getElementById("student").value="";
+    // document.getElementById("course").value="";
+    // document.getElementById("dob").value="";
+    // document.getElementById("email").value="";
 }
 
 function choice(){

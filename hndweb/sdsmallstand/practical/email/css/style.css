@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #623CEA;
+}
+.emailsection{
+    margin-top: 12%;
+}
+.emailheading{
+    font-family: 'Alegreya Sans', sans-serif;
+    font-weight: bolder;
+    font-size: 2rem;
+    color: #fff;
+    text-align: center;
+}
+.emailformbackground{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 2% auto;
+    background-color: #54426B;
+    width: 30%;
+    height: 170px;
+}
+.emailform{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.email{
+    margin-bottom: 30%;
+    background-color: #E7DFC6;
+    border: 1px solid #000;
+    box-shadow: 3px 3px 0 #E9F1F7;
+    width: 130px;
+    height: 60px;
+}
+.emailformbutton{
+    background-color: #DBD5B2;
+    border: 1px solid #000;
+    box-shadow: 3px 3px 0 #E7DFC6;
+    width: 130px;
+    height: 50px;
+    cursor: pointer;
+}
+label{
+    color: #fff;
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/miniproject.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Search | GCC Rockets</title>
+</head>
+<body>
+    <h1 class="page-title">GCC Rockets</h1>
+    <div class="wrapper">
+        <p class="welcome" for="" id="welcome" onload="welcome()">Welcome: </p>
+        <div class="title">
+            <h1 class="heading-title bgb">Enter games</h1>
+            <div class="formwrapper">
+                <input class="datainput" type="text" id="gametitle" placeholder="Enter Game Title">
+                <input class="datainput" type="text" id="genre" placeholder="Enter Genre Of The Game">
+                <input class="datainput" type="text" id="gameage" placeholder="Enter Age Of The Game">
+                <input class="datainput" type="text" id="price" placeholder="Enter The Price Of The Game">
+                <button class="submitdata" onclick="data()">Enter game details</button>
+            </div>
+        </div>
+        <div class="title">
+            <h1 class="heading-title">Search Games</h1>
+            <div class="searchwrapper">
+                <input class="searchinput" type="text" id="find" placeholder="Search for games using numbers">
+                <button class="search" onclick="search()">Search</button>
+                <p class="data" id="data" for=""></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
