@@ -1,0 +1,494 @@
+.ui-overlay-c{
+    background-color: #47A603;
+}
+.ui-header{
+    background-color: #3457BF;
+    border: 5px solid #000;
+    height: 20%;
+}
+.ui-title{
+    color: #fff;
+}
+.date-time{
+    color: #fff;
+    margin: 0;
+    text-align: center;
+}
+.otherpagedate-time{
+    color: #fff;
+    text-align: center;
+}
+.usernamedisplay{
+    color: #fff;
+    margin-left: 18%;
+}
+div.ui-input-text{
+    border: 0;
+}
+div.ui-shadow-inset{
+    box-shadow: none;
+}
+input.ui-input-text{
+    background-color: #fff;
+    border: 4px solid #BF1111;
+    box-shadow: 0px 4px 4px 0px #00000080;
+    margin-top: 25%;
+    margin-bottom: 8%;
+    margin-left: 15%;
+    width: 69%;
+    border-radius: 10px;
+}
+button.ui-btn{
+    background-color: #F2B705;
+    border: 4px solid #3457BF;
+    box-shadow: 0px 4px 4px 0px #00000080;
+    margin-top: 25%;
+    margin-left: 15%;
+    width: 69%;
+    border-radius: 10px;
+}
+button.quiz-link{
+    background-color: #fff;
+    margin: 8% 0 0 9%;
+    width: 84%;
+}
+p.marquee{
+    margin: 0;
+    display: inline-block;
+}
+.quiz{
+    margin-top: 0;
+    display: flex;
+    align-items: flex-start;
+    justify-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+}
+.basicnumq1-group{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+label.basicnumq1{
+    display: inline-block;
+    width: 60%;
+}
+input.basicnumq1-input{
+    display: inline-block;
+    width: 95%;
+    margin: 0 0 0 2%;
+    background-color: #fff;
+    border: 4px solid #BF1111;
+    box-shadow: 0px 4px 4px 0px #00000080;
+}
+.basicnumq2-group{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+label.basicnumq2{
+    display: inline-block;
+    width: 50%;
+}
+input.basicnumq2-input{
+    display: inline-block;
+    margin: 0 0 0 12%;
+    width: 87%;
+}
+.basicnumq3-group{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+label.basicnumq3{
+    display: inline-block;
+    width: 50%;
+}
+input.basicnumq3-input{
+    display: inline-block;
+    margin: 0 0 0 13%;
+    width: 86%;
+}
+.basicnumq4-group{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+label.basicnumq4{
+    display: inline-block;
+    width: 50%;
+}
+input.basicnumq4-input{
+    display: inline-block;
+    margin: 0 0 0 13%;
+    width: 86%;
+}
+.basicnumq5-group{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+label.basicnumq5{
+    display: inline-block;
+    width: 50%;
+}
+input.basicnumq5-input{
+    display: inline-block;
+    margin: 0 0 0 13%;
+    width: 86%;
+}
+button.basicnum-submit{
+    margin: -2% 0 2% 15%;
+}
+.backtomenu{
+    display: none;
+    color: black;
+    text-decoration: none;
+}
+.clearinputs{
+    display: none;
+    cursor: pointer;
+    color: black;
+    text-decoration: none;
+}
+.takeanotherquiz{
+    display: none;
+    color: black;
+    text-decoration: none;
+}
+.ui-footer{
+    background-color: #3457BF;
+    border: 5px solid #000;
+    height: 10%;
+}
+label.basicliteq1{
+    width: 47%;
+}
+label.basicliteq2{
+    width: 35%;
+}
+label.basicliteq3{
+    width: 39%;
+}
+label.basicliteq4{
+    width: 37%;
+}
+label.basicliteq5{
+    width: 35%;
+}
+label.healthandwellq1{
+    width: 60%;
+}
+input.healthandwellq1-input{
+    width: 95%;
+}
+label.healthandwellq2{
+    width: 60%;
+}
+input.healthandwellq2-input{
+    width: 95%;
+}
+label.healthandwellq3{
+    width: 60%;
+}
+input.healthandwellq3-input{
+    width: 95%;
+}
+label.healthandwellq4{
+    width: 60%;
+}
+input.healthandwellq4-input{
+    width: 95%;
+}
+label.healthandwellq5{
+    width: 60%;
+}
+input.healthandwellq5-input{
+    width: 95%;
+}
+label.scottishhisq1{
+    width: 60%;
+}
+input.scottishhisq1-input{
+    width: 95%;
+}
+label.scottishhisq2{
+    width: 50%;
+}
+input.scottishhisq2-input{
+    width: 87%;
+}
+label.scottishhisq3{
+    width: 50%;
+}
+input.scottishhisq3-input{
+    width: 86%;
+}
+label.scottishhisq4{
+    width: 50%;
+}
+input.scottishhisq4-input{
+    width: 86%;
+}
+label.scottishhisq5{
+    width: 50%;
+}
+input.scottishhis-input{
+    width: 86%;
+}
+label.socialawareq1{
+    width: 60%;
+}
+input.socialawareq1-input{
+    width: 95%;
+}
+label.socialawareq2{
+    width: 50%;
+}
+input.socialawareq2-input{
+    width: 87%;
+}
+label.socialawareq3{
+    width: 50%;
+}
+input.socialawareq3-input{
+    width: 86%;
+}
+label.socialawareq4{
+    width: 50%;
+}
+input.socialawareq4-input{
+    width: 86%;
+}
+label.socialawareq5{
+    width: 50%;
+}
+input.socialawareq5-input{
+    width: 86%;
+}
+@media (min-width: 968px){
+    .ui-header{
+        height: 12%;
+    }
+    .usernamedisplay {
+        color: #fff;
+        margin-left: 18%;
+        display: inline-block;
+        width: 22%;
+    }
+    .otherpagedate-time {
+        color: #fff;
+        display: inline-block;
+        text-align: center;
+    }
+    input.ui-input-text{
+        background-color: #fff;
+        border: 4px solid #BF1111;
+        box-shadow: 0px 4px 4px 0px #00000080;
+        margin: 5% 0 8% 45%;
+        width: 21%;
+        border-radius: 10px;
+    }
+    button.ui-btn{
+        background-color: #F2B705;
+        border: 4px solid #3457BF;
+        box-shadow: 0px 4px 4px 0px #00000080;
+        margin: 5% 0 0 45%;
+        width: 21%;
+        border-radius: 10px;
+    }
+    button.quiz-link{
+        background-color: #fff;
+        margin: 3% 0 0 40%;
+    }
+    p.marquee{
+        margin: 0;
+        display: inline-block;
+    }
+    .quiz{
+        margin-left: 17%;
+    }
+    input.basicnumq1-input{
+        width: 100%;
+        margin-left: 0;
+    }
+    label.basicnumq2{
+        display: inline-block;
+        width: 28%;
+    }
+    input.basicnumq2-input{
+        width: 85%;
+        margin-left: 4%;
+    }
+    label.basicnumq3{
+        display: inline-block;
+        width: 36%;
+    }
+    input.basicnumq3-input{
+        width: 86%;
+        margin-left: 0;
+    }
+    label.basicnumq4{
+        display: inline-block;
+        width: 28%;
+    }
+    input.basicnumq4-input{
+        width: 89%;
+        margin-left: 2%;
+    }
+    label.basicnumq5{
+        display: inline-block;
+        width: 39%;
+    }
+    input.basicnumq5-input{
+        width: 91%;
+        margin-left: 0;
+    }
+    button.basicnum-submit{
+        margin: 2% 0 2% 8%;
+        width: 17%;
+    }
+    .backtomenu{
+        display: none;
+        color: black;
+        text-decoration: none;
+    }
+    .clearinputs{
+        display: none;
+        cursor: pointer;
+        color: black;
+        text-decoration: none;
+    }
+    .takeanotherquiz{
+        display: none;
+        color: black;
+        text-decoration: none;
+    }
+    label.basicliteq1{
+        width: 37%;
+    }
+    input.basicliteq1-input{
+        width: 100%;
+    }
+    label.basicliteq2{
+        width: 19%;
+    }
+    input.basicliteq2-input{
+        width: 100%;
+    }
+    label.basicliteq3{
+        width: 13%;
+    }
+    input.basicliteq3-input{
+        width: 100%;
+    }
+    label.basicliteq4{
+        width: 18%;
+    }
+    input.basicliteq4-input{
+        width: 100%;
+    }
+    label.basicliteq5{
+        width: 21%;
+    }
+    input.basicliteq5-input{
+        width: 100%;
+    }
+    button.basiclite-submit{
+        margin: 2% 0 2% 8%;
+    }
+
+    label.healthandwellq1{
+        width: 18%;
+    }
+    input.healthandwellq1-input{
+        width: 100%;
+    }
+    label.healthandwellq2{
+        width: 19%;
+    }
+    input.healthandwellq2-input{
+        width: 100%;
+    }
+    label.healthandwellq3{
+        width: 21%;
+    }
+    input.healthandwellq3-input{
+        width: 100%;
+    }
+    label.healthandwellq4{
+        width: 18%;
+    }
+    input.healthandwellq4-input{
+        width: 100%;
+    }
+    label.healthandwellq5{
+        width: 16%;
+    }
+    input.healthandwellq5-input{
+        width: 100%;
+    }
+
+    label.scottishhisq1{
+        width: 25%;
+    }
+    input.scottishhisq1-input{
+        width: 100%;
+    }
+    label.scottishhisq2{
+        width: 23%;
+    }
+    input.scottishhisq2-input{
+        width: 100%;
+    }
+    label.scottishhisq3{
+        width: 26%;
+    }
+    input.scottishhisq3-input{
+        width: 100%;
+    }
+    label.scottishhisq4{
+        width: 15%;
+    }
+    input.scottishhisq4-input{
+        width: 100%;
+    }
+    label.scottishhisq5{
+        width: 17%;
+    }
+    input.scottishhisq5-input{
+        width: 100%;
+    }
+
+    label.socialawareq1{
+        width: 26%;
+    }
+    input.socialawareq1-input{
+        width: 100%;
+    }
+    label.socialawareq2{
+        width: 26%;
+    }
+    input.socialawareq2-input{
+        width: 100%;
+    }
+    label.socialawareq3{
+        width: 19%;
+    }
+    input.socialawareq3-input{
+        width: 100%;
+    }
+    label.socialawareq4{
+        width: 53%;
+    }
+    input.socialawareq4-input{
+        width: 111%;
+    }
+    label.socialawareq5{
+        width: 50%;
+    }
+    input.socialawareq5-input{
+        width: 111%;
+    }
+}

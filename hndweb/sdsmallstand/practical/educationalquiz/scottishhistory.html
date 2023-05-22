@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+    <title>Document</title>
+</head>
+<body onload="checkCookie(); questions(); dt();">
+    <div data-role="page" data-title="Educational quiz" id="menu" data-theme="c" class="ui-overlay-c">
+        <div data-role="header" data-position = "fixed">
+            <h4>Educational quiz</h4>
+            <p class="usernamedisplay" id="usernameDisplay">Username: </p>
+            <p class="otherpagedate-time" id="dateTime"></p>
+        </div>
+    
+        <div data-role="content" class="ui-content" data-position="fixed">
+            <div class="quiz">
+                <div class="basicnumq1-group">
+                    <label class="scottishhisq1" id="scottishhisq0"></label>
+                    <input class="ui-input-text scottishhisq1-input" type="text" id="scottishhisa0">
+                </div>
+                <label id="feedbackhis0" class="basicnumq1-feedback"></label>
+
+
+                <div class="basicnumq2-group">
+                    <label class="scottishhisq2" id="scottishhisq1"></label>
+                    <input class="ui-input-text scottishhisq2-input" type="text" id="scottishhisa1">
+                </div>
+                <label id="feedbackhis1" class="basicnumq2-feedback"></label>
+
+
+                <div class="basicnumq3-group">
+                    <label class="scottishhisq3" id="scottishhisq2"></label>
+                    <input class="ui-input-text scottishhisq3-input" type="text" id="scottishhisa2">
+                </div>
+                <label id="feedbackhis2" class="basicnumq3-feedback"></label>
+
+
+                <div class="basicnumq4-group">
+                    <label class="scottishhisq4" id="scottishhisq3"></label>
+                    <input class="ui-input-text scottishhisq4-input" type="text" id="scottishhisa3">
+                </div>
+                <label id="feedbackhis3" class="basicnumq4-feedback"></label>
+
+
+                <div class="basicnumq5-group">
+                    <label class="scottishhisq5" id="scottishhisq4"></label>
+                    <input class="ui-input-text scottishhisq5-input" type="text" id="scottishhisa4">
+                </div>
+                <label id="feedbackhis4" class="basicnumq5-feedback"></label>
+
+
+                <button class="ui-btn basicnum-submit" id="scottishhissubmit" onclick="checkHis()">Submit</button>
+                <a class="backtomenu" id="backtomenu" href="menu.html">Go back to menu</a>
+                <a class="clearinputs" id="clearinputs">Retake quiz</a>
+                <a href="menu.html" class="takeanotherquiz" id="takeanotherquiz">Take another quiz</a>
+                <label id="scottishhistotalscore">Your score: </label>
+                <label id="scottishhisgrade"></label>
+            </div>
+        </div>
+    
+        <div data-role="footer" data-position = "fixed">
+            <h4>&copy; Educational quiz</h4>
+        </div>
+    </div>
+</body>
+</html>

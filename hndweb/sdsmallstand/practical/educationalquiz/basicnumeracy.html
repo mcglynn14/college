@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+    <title>Document</title>
+</head>
+<body onload="checkCookie(); questions(); dt();">
+    <div data-role="page" data-title="Educational quiz" id="menu" data-theme="c" class="ui-overlay-c">
+        <div data-role="header" data-position = "fixed">
+            <h4>Educational quiz</h4>
+            <p class="usernamedisplay" id="usernameDisplay">Username: </p>
+            <p class="otherpagedate-time" id="dateTime"></p>
+        </div>
+    
+        <div data-role="content" class="ui-content" data-position="fixed">
+            <div class="quiz">
+                <div class="basicnumq1-group">
+                    <label class="basicnumq1" id="basicnumq0"></label>
+                    <input class="ui-input-text basicnumq1-input" type="text" id="basicnuma0">
+                </div>
+                <label id="feedbacknum0" class="basicnumq1-feedback"></label>
+
+
+                <div class="basicnumq2-group">
+                    <label class="basicnumq2" id="basicnumq1"></label>
+                    <input class="ui-input-text basicnumq2-input" type="text" id="basicnuma1">
+                </div>
+                <label id="feedbacknum1" class="basicnumq2-feedback"></label>
+
+
+                <div class="basicnumq3-group">
+                    <label class="basicnumq3" id="basicnumq2"></label>
+                    <input class="ui-input-text basicnumq3-input" type="text" id="basicnuma2">
+                </div>
+                <label id="feedbacknum2" class="basicnumq3-feedback"></label>
+
+
+                <div class="basicnumq4-group">
+                    <label class="basicnumq4" id="basicnumq3"></label>
+                    <input class="ui-input-text basicnumq4-input" type="text" id="basicnuma3">
+                </div>
+                <label id="feedbacknum3" class="basicnumq4-feedback"></label>
+
+
+                <div class="basicnumq5-group">
+                    <label class="basicnumq5" id="basicnumq4"></label>
+                    <input class="ui-input-text basicnumq5-input" type="text" id="basicnuma4">
+                </div>
+                <label id="feedbacknum4" class="basicnumq5-feedback"></label>
+
+
+                <button class="ui-btn basicnum-submit" id="basicnumsubmit" onclick="checkNum()">Submit</button>
+                <a class="backtomenu" id="backtomenu" href="menu.html">Go back to menu</a>
+                <a class="clearinputs" id="clearinputs">Retake quiz</a>
+                <a href="menu.html" class="takeanotherquiz" id="takeanotherquiz">Take another quiz</a>
+                <label id="basicnumtotalscore">Your score: </label>
+                <label id="basicnumgrade"></label>
+            </div>
+        </div>
+    
+        <div data-role="footer" data-position = "fixed">
+            <h4>&copy; Educational quiz</h4>
+        </div>
+    </div>
+</body>
+</html>

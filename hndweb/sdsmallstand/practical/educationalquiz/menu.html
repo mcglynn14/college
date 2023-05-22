@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+    <title>Document</title>
+</head>
+<body onload="dt(); checkCookie();">
+    <div data-role="page" data-title="Educational quiz" id="menu" data-theme="c" class="ui-overlay-c">
+        <div data-role="header" data-position = "fixed">
+            <h4>Educational quiz</h4>
+            <p class="usernamedisplay" id="usernameDisplay">Username: </p>
+            <p class="otherpagedate-time" id="dateTime"></p>
+        </div>
+    
+        <div data-role="content" class="ui-content" data-position="fixed">
+    
+        <button class="ui-btn quiz-link" id="basicnumeracy" onclick="changepage()"><i class="fa-solid fa-calculator"></i> Basic Numeracy</button>
+        <button class="ui-btn quiz-link" id="basicLiteracy" onclick="changepage()"><i class="fa-solid fa-a"></i> Basic Literacy</button>
+        <button class="ui-btn quiz-link" id="healthandwellbeing" onclick="changepage()"><i class="marguee fa-solid fa-heart"></i> <i class="marquee fa-solid fa-apple-whole"></i> <p class="marquee healthquiz">Health and Wellbeing</p></button>
+        <button class="ui-btn quiz-link" id="scottishhistory" onclick="changepage()"><i class="fa-solid fa-clock-rotate-left"></i> Scottish History</button>
+        <button class="ui-btn quiz-link" id="socialawareness" onclick="changepage()"><i class="fa-solid fa-users"></i> Social Awareness</button>
+    
+        <label id="result"></label>
+    
+        <label id="TimesTable"></label>
+    
+        </div>
+    
+        <div data-role="footer" data-position = "fixed">
+            <h4>&copy; Educational quiz</h4>
+        </div>
+    </div>
+</body>
+</html>

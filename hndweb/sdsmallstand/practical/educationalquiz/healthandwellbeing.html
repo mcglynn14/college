@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+    <title>Document</title>
+</head>
+<body onload="checkCookie(); questions(); dt();">
+    <div data-role="page" data-title="Educational quiz" id="menu" data-theme="c" class="ui-overlay-c">
+        <div data-role="header" data-position = "fixed">
+            <h4>Educational quiz</h4>
+            <p class="usernamedisplay" id="usernameDisplay">Username: </p>
+            <p class="otherpagedate-time" id="dateTime"></p>
+        </div>
+    
+        <div data-role="content" class="ui-content" data-position="fixed">
+            <div class="quiz">
+                <div class="basicnumq1-group">
+                    <label class="healthandwellq1" id="healthandwellq0"></label>
+                    <input class="ui-input-text healthandwellq1-input" type="text" id="healthandwella0">
+                </div>
+                <label id="feedbackwell0" class="basicnumq1-feedback"></label>
+
+
+                <div class="basicnumq2-group">
+                    <label class="healthandwellq2" id="healthandwellq1"></label>
+                    <input class="ui-input-text healthandwellq2-input" type="text" id="healthandwella1">
+                </div>
+                <label id="feedbackwell1" class="basicnumq2-feedback"></label>
+
+
+                <div class="basicnumq3-group">
+                    <label class="healthandwellq3" id="healthandwellq2"></label>
+                    <input class="ui-input-text healthandwellq3-input" type="text" id="healthandwella2">
+                </div>
+                <label id="feedbackwell2" class="basicnumq3-feedback"></label>
+
+
+                <div class="basicnumq4-group">
+                    <label class="healthandwellq4" id="healthandwellq3"></label>
+                    <input class="ui-input-text healthandwellq4-input" type="text" id="healthandwella3">
+                </div>
+                <label id="feedbackwell3" class="basicnumq4-feedback"></label>
+
+
+                <div class="basicnumq5-group">
+                    <label class="healthandwellq5" id="healthandwellq4"></label>
+                    <input class="ui-input-text healthandwellq5-input" type="text" id="healthandwella4">
+                </div>
+                <label id="feedbackwell4" class="basicnumq5-feedback"></label>
+
+
+                <button class="ui-btn basicnum-submit" id="healthandwellsubmit" onclick="checkWell()">Submit</button>
+                <a class="backtomenu" id="backtomenu" href="menu.html">Go back to menu</a>
+                <a class="clearinputs" id="clearinputs">Retake quiz</a>
+                <a href="menu.html" class="takeanotherquiz" id="takeanotherquiz">Take another quiz</a>
+                <label id="healthwelltotalscore">Your score: </label>
+                <label id="healthwellgrade"></label>
+            </div>
+        </div>
+    
+        <div data-role="footer" data-position = "fixed">
+            <h4>&copy; Educational quiz</h4>
+        </div>
+    </div>
+</body>
+</html>

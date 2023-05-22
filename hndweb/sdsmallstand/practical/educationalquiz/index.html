@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+    <title>Document</title>
+</head>
+<body onload="setCookie(cname, cvalue); dt();">
+    <div data-role="page" data-title="Educational quiz" id="index" data-theme="c" class="ui-overlay-c">
+        <div data-role="header" data-position = "fixed">
+            <h4>Educational quiz</h4>
+            <p class="date-time" id="dateTime"></p>
+        </div>
+    
+        <div data-role="content" class="ui-content" data-position="fixed">
+    
+    
+        <input class="ui-input-text username-input" type="text" id="usernameinput" placeholder="Enter your username">
+        <input class="ui-input-text" type="text" id="emailInput" placeholder="enter your email address">
+    
+        <button class="ui-btn" id="login" onclick="setCookie('name', 'nvalue'), login();"> <i class="fa-sharp fa-light fa-house"></i>Login</button>
+
+        </div>
+    
+        <div data-role="footer" data-position = "fixed">
+            <h4>&copy; Educational quiz</h4>
+        </div>
+    </div>
+</body>
+<script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script>
+<script src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js"></script>
+</html>
