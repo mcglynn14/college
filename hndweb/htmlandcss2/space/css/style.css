@@ -1,0 +1,199 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    background-color: #3c6e71;
+}
+ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+ul li{
+    color: #fff;
+    text-transform: uppercase;
+}
+ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+ul li a:hover{
+    color: cadetblue;
+}
+.wrapper{
+    height: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+nav{
+    background-color: #264653;
+    height: 5%;
+    font-family: 'Kaushan Script', cursive;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid #fff;
+    border-top: 2px solid #fff;
+}
+.card{
+    height: 75%;
+    padding: 3%;
+    border: 2px solid #fff;
+    width: 100%;
+    margin: 3%;
+    background-color: rgba(225, 225, 225, 0.3);
+    backdrop-filter: blur;
+    --webkit-backdrop-filter: blur(1px);
+}
+.card:hover{
+    cursor: pointer;
+    height: 75%;
+    transition: height .1s;
+}
+.card h2{
+    font-family: 'Bruno Ace SC', cursive;
+    color: ghostwhite;
+}
+h1{
+    font-family: 'Bruno Ace SC', cursive;
+    color: ghostwhite;
+}
+.card h2 p{
+    margin: 3%;
+}
+.card-img1{
+    height: 55%;
+    background-image: url(../images/mars.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.card-img2{
+    height: 55%;
+    background-image: url(../images/earth.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.card-img3{
+    height: 55%;
+    background-image: url(../images/jupiter.jpg);
+    background-position: center;
+    background-size: cover;
+}
+header{
+    background-color: #353535;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+footer{
+    background-color: #353535;
+    height: 10%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 0;
+}
+.gallerycard{
+    height: 35%;
+    padding: 3%;
+    border: 2px solid #fff;
+    width: 100%;
+    margin: 3%;
+    background-color: rgba(225, 225, 225, 0.3);
+    backdrop-filter: blur;
+    -webkit-backdrop-filter: blur(1px);
+    border-radius: 10px;
+}
+.gallerycard:hover{
+    transform: scale(1.1);
+    transition: 1s;
+    box-shadow: 0 4px 8px #000000b3;
+}
+.galleryimg1{
+    height: 100%;
+    background-image: url(../images/mars.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.galleryimg2{
+    height: 100%;
+    background-image: url(../images/earth.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.galleryimg3{
+    height: 100%;
+    background-image: url(../images/jupiter.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.galleryimg4{
+    height: 100%;
+    background-image: url(../images/nasa-2W-QWAC0mzI-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.galleryimg5{
+    height: 100%;
+    background-image: url(../images/nasa-N3BQHYOVq5E-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.galleryimg6{
+    height: 100%;
+    background-image: url(../images/nasa-ScBkW9AKgcA-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.card-img4{
+    height: 55%;
+    background-image: url();
+}
+@media screen and (min-width: 991px){
+    nav{
+        background-color: #264653;
+        height: 5%;
+        font-family: 'Kaushan Script', cursive;
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        border-bottom: 2px solid #fff;
+        border-top: 2px solid #fff;
+    }
+    .card{
+        padding: 3%;
+        width: 25%;
+    }
+    .glass{
+        padding: 3%;
+        width: 20%;
+    }
+    footer{
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        overflow-x: 0;
+    }
+    .card:hover{
+        height: 90%;
+        font-size: 18px;
+    }
+    .gallerycard{
+        padding: 3%;
+        margin: 3%;
+        width: 25%;
+    }
+}
