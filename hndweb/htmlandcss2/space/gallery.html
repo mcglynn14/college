@@ -10,14 +10,20 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/fontawesome/css/all.min.css">
+    <link rel="folder" href="assets/fontawesome/webfonts/">
     <title>PLANETS</title>
 </head>
 <body>
     <header>
         <h1>PLANETS</h1>
+        <span class="navbartoggle" id="navbar-toggle">
+            <i class="fa-sharp fa-solid fa-bars" id="open-toggle"></i>
+            <i class="fa-sharp fa-solid fa-x" id="close-toggle"></i>
+        </span>
     </header>
-    <nav>
-        <ul>
+    <nav class="nav">
+        <ul id="mobile-nav">
             <li><a href="#">Home</a></li>
             <li><a href="#">Mars</a></li>
             <li><a href="#">Earth</a></li>
@@ -60,5 +66,6 @@
     <footer>
         <h1>PLANETS</h1>
     </footer>
+    <script src="js/hamburger.js"></script>
 </body>
 </html>

@@ -7,19 +7,72 @@ body{
     height: 100vh;
     background-color: #3c6e71;
 }
+header{
+    background-color: #353535;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+.navbartoggle .no-nav{
+    display: block;
+}
+.navbartoggle{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    cursor: pointer;
+    font-size: 2rem;
+    left: 3%;
+    width: 9%;
+    height: 10%;
+    background-color: #264653;
+    border-radius: 30px;
+    padding: 14px 30px;
+}
+.navbartoggle .fa-bars{
+    color: #fff;
+}
+.navbartoggle .fa-x{
+    color: #fff;
+    display: none;
+}
+.navbartoggle .open-toggle{
+    display: none;
+}
+.navbartoggle .close-toggle{
+    display: inline;
+}
+.active{
+    transition: linear 250ms;
+    background-color: #264653;
+    height: 5%;
+    font-family: 'Kaushan Script', cursive;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-top: 2px solid #fff;
+}
 ul{
     list-style-type: none;
-    display: flex;
-    justify-content: space-evenly;
+    display: none;
     width: 100%;
 }
 ul li{
     color: #fff;
     text-transform: uppercase;
+    width: 100%;
 }
-ul li a{
+a{
     text-decoration: none;
     color: #fff;
+    padding: 20px 15px;
+    border-bottom: 2px solid #fff;
+    display: block;
+    text-align: center;
 }
 ul li a:hover{
     color: cadetblue;
@@ -31,17 +84,6 @@ ul li a:hover{
     align-items: center;
     flex-wrap: wrap;
     flex-direction: row;
-}
-nav{
-    background-color: #264653;
-    height: 5%;
-    font-family: 'Kaushan Script', cursive;
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    border-bottom: 2px solid #fff;
-    border-top: 2px solid #fff;
 }
 .card{
     height: 75%;
@@ -56,7 +98,8 @@ nav{
 .card:hover{
     cursor: pointer;
     height: 75%;
-    transition: height .1s;
+    padding: 2%;
+    transition: height, padding 1s;
 }
 .card h2{
     font-family: 'Bruno Ace SC', cursive;
@@ -86,14 +129,6 @@ h1{
     background-image: url(../images/jupiter.jpg);
     background-position: center;
     background-size: cover;
-}
-header{
-    background-color: #353535;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
 }
 footer{
     background-color: #353535;
@@ -162,6 +197,17 @@ footer{
     background-image: url();
 }
 @media screen and (min-width: 991px){
+    header{
+        background-color: #353535;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+    }
+    .navbartoggle{
+        display: none;
+    }
     nav{
         background-color: #264653;
         height: 5%;
@@ -172,6 +218,28 @@ footer{
         align-items: center;
         border-bottom: 2px solid #fff;
         border-top: 2px solid #fff;
+    }
+    ul{
+        list-style-type: none;
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+    }
+    ul li{
+        width: 0;
+    }
+    .active{
+        display: flex;
+        flex-direction: row;
+        color: #fff;
+        padding: 20px 15px;
+        border-bottom: 0;
+        border-top: 0;
+        justify-content: space-evenly;
+    }
+    a{
+        border-bottom: 0;
+        padding: 0;
     }
     .card{
         padding: 3%;
