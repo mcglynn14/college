@@ -1,7 +1,7 @@
 <?php
 include 'config/dbConfig.php';
 include 'partials/header.php';
-$students = $conn->prepare('SELECT
+$studentCourse = $conn->prepare('SELECT
 s.student_id,
 s.student_name,
 s.dob,
@@ -12,9 +12,9 @@ FROM enrolment e
 INNER JOIN student s ON e.fk_student = s.student_id
 INNER JOIN course c ON e.fk_course = c.course_id;
 ');
-$students->execute();
-$students->store_result();
-$students->bind_result($studentId, $studentName, $dob, $enrolDate, $courseId, $course);
+$studentCourse->execute();
+$studentCourse->store_result();
+$studentCourse->bind_result($studentId, $studentName, $dob, $enrolDate, $courseId, $course);
 ?>
 <table class="table">
     <thead>
@@ -27,7 +27,7 @@ $students->bind_result($studentId, $studentName, $dob, $enrolDate, $courseId, $c
     </tr>
     </thead>
     <tbody>
-        <?php while ($students->fetch()): ?>
+        <?php while ($studentCourse->fetch()): ?>
         <td><?= $studentId ?></td>
         <td><?= $studentName ?></td>
         <td><?= $dob ?></td>

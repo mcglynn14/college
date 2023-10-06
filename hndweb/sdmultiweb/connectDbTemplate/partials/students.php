@@ -22,7 +22,7 @@ $students->bind_result($studentId, $studentName, $dob, $address, $tel);
     </tr>
     </thead>
     <tbody>
-        <?php while ($students->fetch()): ?>
+        <tr><?php while ($students->fetch()): ?></tr>
         <td><?= $studentId ?></td>
         <td><?= $studentName ?></td>
         <td><?= $dob ?></td>
