@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+}
+header{
+    position: relative;
+    background-image: linear-gradient(rgba(56, 56, 56, 0.5), rgba(56, 56, 56, 0.5)), url(../img/christian-wiediger-8nXKXYdO-Wk-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    overflow: hidden;
+}
+.headerinner{
+    display: flex;
+    align-items: center;
+    gap: 44px;
+}
+.navhamburger{
+    margin: 0 0 10px 10px;
+    height: 20px;
+    display: flex;
+    flex-direction: column;
+}
+span{
+    display: block;
+    height: 4px;
+    width: 18px;
+    font-size: 2rem;
+    background-color: #000;
+    margin-bottom: 4px;
+}
+span:last-child{
+    margin-bottom: 0;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+.ul-links{
+    display: none;
+}
+.logo img{
+    width: 155px;
+    height: 85px;
+}
+
+.header-section{
+    width: 100%;
+    height: 95px;
+    background: linear-gradient(180deg, #474747 0%, rgba(44, 44, 44, 0.58) 46.35%, rgba(0, 0, 0, 0.02) 100%);
+    margin-top: 96px;
+}
+.header-title{
+    font-family: 'Figtree', sans-serif;
+    color: #fff;
+    text-align: center;
+}
