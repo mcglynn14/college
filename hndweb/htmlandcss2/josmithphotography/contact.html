@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="js/contactform.js"></script>
+    <title>Jo Smith Photography</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="headerinner">
+                <div class="logo">
+                    <img class="josmith-logo" src="img/JoSmithLogo.svg" alt="">
+                </div>
+                <div class="navbartoggle" id="navbar-toggle">
+                    <i class="fa-solid fa-bars" id="open-toggle"></i>
+                    <i class="fa-solid fa-x" id="close-toggle"></i>
+                </div>
+            </div>
+            <nav>
+                <ul class="ul-links" id="mobile-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="header-section">
+            <h1 class="header-title">Contact</h1>
+            <p class="header-slogan">Find out how to contact me below</p>
+        </section>
+            <section class="first">
+                <div class="container">
+                    <h2 class="first-heading">Contact form</h2>
+                    <form id="contactForm" action="">
+                        <input type="text" id="name" placeholder="Name">
+                        <input type="email" id="email" placeholder="Email">
+                        <input type="text" id="message" placeholder="Message">
+                        <button class="submit" onclick="submitForm()" type="submit">Submit</button>
+                    </form>
+                </div>
+            </section>
+            <section class="second">
+                <div class="container">
+                    <h2 class="second-heading">Where the Magic Happens</h2>
+                    <p class="second-text">Located at 987 Brook Street, Dundee, DD5 2EA, our studio is where moments come to life, where stories unfold, and where your vision takes center stage. We invite you to step into the world of Jo Smith Photography, where every click of the camera is a brushstroke in the masterpiece of your life.<br><br>
+                        
+                        Our mission is to craft not just pictures but visual tales that evoke emotions and encapsulate the essence of your unique story. Whether you're looking for breathtaking wedding photography, captivating family portraits, or striking commercial work, our lens is poised to transform the ordinary into the extraordinary.<br><br>
+                        
+                        Join us at our studio, and let's embark on a photographic journey together. Discover the magic of Jo Smith Photography, where we turn your moments into art and make your memories last forever. Your story is our inspiration, and we can't wait to capture it. Visit us today at 987 Brook Street, Dundee, DD5 2EA, and let's create something beautiful together.</p>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2204.158665175116!2d-2.8671172227259243!3d56.465027573356224!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48865e96e548488d%3A0x652981c5a1436741!2s987%20Brook%20St%2C%20Broughty%20Ferry%2C%20Dundee%20DD5%202EA!5e0!3m2!1sen!2suk!4v1698228849305!5m2!1sen!2suk" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </section>
+    </main>
+    <footer>
+        <p class="copy">&copy; Jo Smith Photography</p>
+        <div class="socialicons">
+            <a href="https://twitter.com/josmithphoto" class="twitterlink"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="https://www.instagram.com/josmithphotography123/" class="instagramlink"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+    </footer>
+    <script src="js/hamburger.js"></script>
+</body>
+</html>

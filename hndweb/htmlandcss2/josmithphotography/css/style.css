@@ -10,33 +10,39 @@ body{
 }
 header{
     position: relative;
-    background-image: linear-gradient(rgb(102 102 102 / 90%), rgb(102 102 102 / 0%)), url(../img/christian-wiediger-8nXKXYdO-Wk-unsplash.jpg);
-    background-size: cover;
-    background-position: center;
-    height: 300px;
+    background-color: #474747;
     overflow: hidden;
 }
 .headerinner{
     display: flex;
     align-items: center;
-    gap: 44px;
+    gap: 18%;
 }
-.navhamburger{
-    margin: 0 0 10px 10px;
-    height: 20px;
+.navbartoggle{
     display: flex;
-    flex-direction: column;
-}
-span{
-    display: block;
-    height: 4px;
-    width: 18px;
+    justify-content: center;
+    position: relative;
+    cursor: pointer;
     font-size: 2rem;
-    background-color: #000;
-    margin-bottom: 4px;
+    width: 9%;
+    height: 10%;
+    border-radius: 30px;
+    padding: 14px 30px;
 }
-span:last-child{
-    margin-bottom: 0;
+.navbartoggle .fa-bars{
+    color: #fff;
+    display: block;
+    font-size: 2rem;
+}
+.navbartoggle .fa-x{
+    color: #fff;
+    display: none;
+}
+.navbartoggle .open-toggle{
+    display: none;
+}
+.navbartoggle .close-toggle{
+    display: inline;
 }
 nav{
     display: flex;
@@ -46,17 +52,39 @@ nav{
 }
 .ul-links{
     display: none;
+    list-style: none;
 }
 .logo img{
     width: 155px;
     height: 85px;
 }
-
+.active{
+    background-color: #474747;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 5%;
+    color: #fff;
+    font-family: sans-serif;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+    padding: 20px 81px;
+    border-bottom: 2px solid #fff;
+    display: block;
+    text-align: center;
+}
+a:hover{
+    border-bottom: 2px solid #fff;
+}
 .header-section{
     width: 100%;
-    height: 95px;
-    background: linear-gradient(180deg, #474747 0%, rgba(44, 44, 44, 0.58) 46.35%, rgba(0, 0, 0, 0.02) 100%);
-    margin-top: 79px;
+    height: 100%;
+    background-color: #323232;
+    padding-bottom: 40px;
 }
 .header-title{
     font-family: 'Figtree', sans-serif;
@@ -72,14 +100,12 @@ nav{
 }
 .container{
     margin: auto;
-    width: 85%;
-}
-.first{
-    background-color: #0071c5;
+    max-width: 1100px;
+    padding: 0 30px;
 }
 .first-heading{
     font-family: 'Figtree', sans-serif;
-    color: #fff;
+    color: #323232;
     text-align: center;
     padding-top: 10px;
     font-weight: bold;
@@ -87,17 +113,17 @@ nav{
 .first-text{
     display: block;
     font-family: sans-serif;
-    color: #fff;
+    color: #000;
     margin: 19px auto 0;
     padding-bottom: 20px;
-    width: 81%;
 }
 .second{
     margin-bottom: 37px;
+    border-top: 2px solid #323232;
 }
 .second-heading{
     font-family: 'Figtree', sans-serif;
-    color: #000;
+    color: #323232;
     text-align: center;
     padding-top: 10px;
     font-weight: bold;
@@ -109,43 +135,561 @@ nav{
     padding-bottom: 34px;
     width: 81%;
 }
+/* zoom in gallery */
+
+
+/* KENBURNS STYLES 
+-------------------------------------------------------*/
+/*  kenburns_slideshow is the wrapper div. 
+Our list of Images scrolls inside of this frame
+To compute the minimum frame size needed:;
+image width * scale
+image height * scale
+
+if the image size is smaller than the frame size,
+gaps may appear. If image sizes are exactly the same,
+the images will fade over one another and not move. 
+*/
+#kenburns-slideshow {
+	position: relative;
+	width: 600px;
+	height: 360px;
+	box-sizing: border-box;
+	z-index: 1;
+	overflow: hidden;
+    margin-top: 5%;
+}
+
+/*  The plugin wraps the images in div.kb-slide. This
+allows me to run separate animations simultaneously. */
+.kb-slide{
+	position: absolute;
+	z-index: 1;
+	opacity: 0;
+}
+
+
+/* I used position relative here because IE8
+didnt like the opacity when the img was set to absolute*
+translate3d(000) kicks them into HW acceleration, and 
+backface-visibility gives some performance boosts.*/
+.kb-slide img{
+	position: relative;
+	-webkit-transform: translate3d(0,0,0);
+	-moz-transform: translate3d(0,0,0);
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+
+}
+
+
+/* If the script encounters an image that hasnt loaded,
+it pops up a little loading wheel. I used a little CSS3
+but you could also use a gif to better handle ie8*/
+.loader {
+	width:32px;
+	height:32px;
+	top:6px;
+	left:550px;
+	border:5px solid rgba(128,128,128,0.9);
+	opacity:.9;
+	border-top:5px solid rgba(0,0,0,0);
+	border-left:5px dotted rgba(0,0,0,0);
+	border-radius:32px;
+	-moz-animation:spin .7s infinite linear;
+	-webkit-animation:spin .7s infinite linear;
+}
+
+@-moz-keyframes spin {
+	0% { -moz-transform:rotate(0deg); }
+	100% { -moz-transform:rotate(360deg); }
+}
+@-moz-keyframes spinoff {
+	0% { -moz-transform:rotate(0deg); }
+	100% { -moz-transform:rotate(-360deg); }
+}
+@-webkit-keyframes spin {
+	0% { -webkit-transform:rotate(0deg); }
+	100% { -webkit-transform:rotate(360deg); }
+}
+@-webkit-keyframes spinoff {
+	0% { -webkit-transform:rotate(0deg); }
+	100% { -webkit-transform:rotate(-360deg); }
+}
+.title {
+	clear: left;
+	margin:0;
+	padding:15px 0 0 0;
+}
+#status{
+	color:#333;
+	font-size: 12px;
+	float:right;
+	clear: right;
+}
+
+/* #### CSS that's applied when the viewing area's height is 600px or less #### */
+
+@media screen and (max-width: 600px){
+	#kenburns-slideshow{
+		width: 100%;
+		height: 200px;
+		border: none;
+	}
+}
 iframe{
     box-shadow: 0  4px 8px #474747;
     transform: scale(1.1);
     width: 100%;
 }
 .third{
-    background-color: #a387e7;
+    background-color: #323232;
 }
 .third-heading{
     font-family: 'Figtree', sans-serif;
     text-align: center;
     padding-top: 10px;
     font-weight: bold;
+    color: #fff;
 }
 .third-text{
     font-family: sans-serif;
     margin: 19px auto 0;
     padding-bottom: 20px;
-    width: 81%;
+    color: #fff;
 }
 .forth{
-    background-color: #c70039;
+    padding-bottom: 20px;
 }
 .forth-heading{
     font-family: 'Figtree', sans-serif;
-    color: #fff;
+    color: #323232;
     text-align: center;
     padding-top: 10px;
     font-weight: bold;
 }
 .forth-text{
     font-family: sans-serif;
+    color: #000;
+    margin: 19px auto 0;
+    padding-bottom: 20px;
+}
+.btn{
+    display: block;
+    position: relative;
+    width: 100%;
+    padding: 4px 5px;
+    text-align: center;
+    border-radius: 16px;
+    border: 2px solid #323232;
+    color: #000;
+    text-decoration: none;
+    font-family: sans-serif;
+    margin: 0 auto;
+    transition: 0.5s;
+}
+.btn:hover{
+    background-color: #323232;
+    color: #fff;
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px #00000081;
+}
+.fifth{
+    background-color: #323232;
+    padding-bottom: 20px;
+}
+.fifth-heading{
+    font-family: 'Figtree', sans-serif;
+    color: #fff;
+    text-align: center;
+    padding-top: 10px;
+    font-weight: bold;
+}
+.fifth-text{
+    font-family: sans-serif;
     color: #fff;
     margin: 19px auto 0;
-    padding-bottom: 20px; 
-    width: 81%;
+    padding-bottom: 20px;
+}
+.services-btn{
+    color: #fff;
+    border: 2px solid #fff;
+}
+.services-btn:hover{
+    background-color: #fff;
+    color: #000;
+    box-shadow: 0 4px 8px #a9a9a999;
+}
+.sixth{
+    padding-bottom: 60px;
+    height: 1988px;
+}
+.sixth-heading{
+    font-family: 'Figtree', sans-serif;
+    text-align: center;
+    padding-top: 10px;
+    font-weight: bold;
+    margin-bottom: 100px;
+}
+.twitter-timeline{
+    margin-top: 50px;
+    max-width: 100px;
+}
+.socialicons{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.twitterlink{
+    padding: 0 0;
+    border-bottom: 0;
+}
+.fa-x-twitter{
+    margin-top: 10px;
+    color: #0071c5;
+    font-size: 2rem;
+}
+.instagramlink{
+    padding: 0 0;
+    border-bottom: 0;
+}
+.fa-instagram{
+    margin-top: 10px;
+    color: #a387e7;
+    font-size: 2rem;
 }
 footer{
     background-color: #474747;
+    border-top: 2px solid #000;
+    height: 15%;
+}
+.copy{
+    font-family: sans-serif;
+    color: #fff;
+    text-align: center;
+    margin-top: 25px;
+}
+.cards-wrapper{
+    gap: 30px;
+    width: 100%;
+    margin: 40px auto 0;
+    padding-bottom: 50px;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.pe-card{
+    width: 300px;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url(../img/WeddingPhotography/wedding4.jpg) center no-repeat;
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
+    transition: all 0.4s;
+}
+.sw-card{
+    width: 300px;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url(../img/LandscapePhotography/landscape2.jpg) center no-repeat;
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
+    transition: all 0.4s;
+}
+.lw-card{
+    width: 300px;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url(../img/LandscapePhotography/landscape5.jpg) center no-repeat;
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
+    transition: all 0.4s;
+}
+.pe-card:hover{
+    transform: scale(1.1);
+    box-shadow: 0 15px 60px rgba(0, 0, 0, 0.8);
+}
+.sw-card:hover{
+    transform: scale(1.1);
+    box-shadow: 0 15px 60px rgba(0, 0, 0, 0.8);
+}
+.lw-card:hover{
+    transform: scale(1.1);
+    box-shadow: 0 15px 60px rgba(0, 0, 0, 0.8);
+}
+.card-header{
+    margin-bottom: 40px;
+}
+.card-header h3{
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 2rem;
+    font-weight: 300;
+    color: #fff;
+    margin: 30px;
+    border-bottom: 1px groove #fff;
+    padding: 10px;
+}
+.card-header h1{
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 60px;
+    font-weight: 300;
+}
+.card-header sup{
+    font-size: 35px;
+}
+.card-header span{
+    font-size: 18px;
+}
+.card-body{
+    margin-bottom: 60px;
+}
+.card-body li{
+    list-style: none;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 1rem;
+    font-weight: 300;
+    margin: 15px 0;
+}
+.card-body i{
+    margin-right: 25px;
+}
+.card-footer{
+    margin-bottom: 40px;
+}
+.card-btn{
+    width: 120px;
+    padding: 10px;
+    background-color: #474747;
+    color: #ddd;
+    font-family: sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: 2px solid #fff;
+    border-radius: 50px;
+    outline: none;
+    cursor: pointer;
+    margin: 0 auto;
+}
+.card-btn:hover{
+    background-color: #fff;
+    border: 2px solid #474747;
+    color: #323232;
+}
+@media (max-width: 1200px){
+    .container{
+        height: 100%;
+    }
+    .cards-wrapper{
+        flex-wrap: wrap;
+    }
+    .card{
+        margin: 50px 0;
+    }
+}
+
+button{
+    width: 95px;
+    height: 33px;
+    background-color: #474747;
+    color: #fff;
+    border: 2px solid #323232;
+    font-family: sans-serif;
+    font-weight: 600;
+    border-radius: 25px;
+    padding: 10px;
+    transition: 500ms ease-in-out;
+}
+button:hover{
+    background-color: #fff;
+    border: 2px solid #474747;
+    color: #323232;
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px #000000b3;
+}
+.filter-buttons{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.images{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+.image-wedding img{
+    cursor: pointer;
+    width: 260px;
+    margin-bottom: 10px;
+}
+.image-landscape img{
+    width: 260px;
+    margin-bottom: 10px;
+}
+/* Style for the popup */
+.popup{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1000;
+}
+
+.popup .swiper-container{
+    width: 80%;
+    height: 80%;
+    margin: 10% auto;
+}
+
+.popup .swiper-slide img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.popup .close{
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    cursor: pointer;
+    z-index: 1001;
+}
+
+/* Style for Swiper pagination and navigation */
+.swiper-pagination,
+.swiper-button-next,
+.swiper-button-prev{
+    color: #fff;
+}
+
+.swiper{
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide{
+    text-align: center;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+    
+form{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+input{
+    margin-bottom: 20px;
+    padding: 7px 8px;
+}
+button.submit{
+    margin: 0 auto 10px;
+}
+
+@media screen and (min-width: 601px) and (max-width: 1024px){
+    .container{
+        padding: 0 75px;
+    }
+    .headerinner{
+        gap: 64%;
+    }
+    .sixth{
+        padding-bottom: 150px;
+        height: auto;
+    }
+    .sixth-heading{
+        margin-bottom: 120px;
+    }
+    .filter-buttons{
+        width: 80%;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin: 20px auto;
+        row-gap: 15px;
+    }
+}
+
+@media screen and (min-width: 1025px){
+    header{
+        display: flex;
+    }
+    .container{
+        display: inherit;
+        gap: 230px;
+    }
+    a{
+        padding: 20px 55px;
+        border-bottom: 0;
+    }
+    .ul-links{
+        display: flex;
+        flex-direction: row;
+        font-family: sans-serif;
+        border-bottom: 0;
+    }
+    .navbartoggle{
+        display: none;
+    }
+    .second-text{
+        width: 100%;
+    }
+    .second-textmain{
+        margin: 19px 355px 0;
+    }
+    #kenburns-slideshow{
+        margin: 5% auto;
+    }
+    .sixth{
+        height: auto;
+        padding-bottom: 225px;
+    }
+    .sixth-heading{
+        margin-bottom: 195px;
+    }
+    button{
+        width: 95px;
+        height: 33px;
+        background-color: #023047;
+        color: #fff;
+        font-weight: 600;
+        border-radius: 25px;
+        padding: 10px;
+    }
+    button:hover{
+        transform: scale(1.1);
+        transition: 500ms ease-in;
+        box-shadow: 0 4px 8px #000000b3;
+    }
+    .filter-buttons{
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .images{
+        display: flex;
+    }
 }
