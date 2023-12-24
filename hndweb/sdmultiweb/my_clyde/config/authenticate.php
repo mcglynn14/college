@@ -26,12 +26,7 @@ if ($stmt = $conn->prepare('SELECT student_num, psw FROM student WHERE student_n
             $_SESSION['loggedin'] = TRUE;
             $_SESSION['student_num'] = $student_num;
 
-            if($student_num == 123456){
-            header("Location: ../pages/admin/dashboard.php");
-            } else {
-                header("Location: ../pages/student/dashboard.php");
-
-            }
+            header('location: ../s/dashboard');
 
         } else {
             $errorMessage = 'Incorrect login details!';

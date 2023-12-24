@@ -4,7 +4,7 @@
 
     $errorMessage = '';
 
-    if ($stmt = $conn->prepare('SELECT student_num, password FROM student WHERE student_num = ?')){
+    if ($stmt = $conn->prepare('SELECT student_num, psw FROM Student WHERE student_num = ?')){
 
         $stmt->bind_param('i', $_POST['student_num']);
         $stmt->execute();
@@ -15,17 +15,13 @@
             $stmt->bind_result($student_num, $password);
             $stmt->fetch();
 
-            if (password_verify($_POST['password'], $password)){
+            if (password_verify($_POST['psw'], $password)){
 
                 session_regenerate_id();
                 $_SESSION["loggedin"] = TRUE;
                 $_SESSION['student_num'] = $student_num;
 
-                if($student_num == 123456){
-                    header("Location: ../pages/admin/dashboard.php");
-                } else{
-                    header("Location: ../pages/student/dashboard.php");
-                }
+                header('location: ../s/dashboard');
             } else {
                 $errorMessage = 'Incorrect login details!';
                 header('Location: ../pages/Login.php');
