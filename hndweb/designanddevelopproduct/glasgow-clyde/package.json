@@ -15,7 +15,8 @@
     "react-native-paper": "4.9.2"
   },
   "devDependencies": {
-    "@babel/core": "^7.20.0"
+    "@babel/core": "^7.20.0",
+    "@babel/plugin-proposal-private-property-in-object": "7.21.11"
   },
   "private": true
 }
