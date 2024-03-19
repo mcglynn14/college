@@ -1,6 +1,7 @@
 <?php 
     session_start();
     include '../partials/header.php';
+    include '../partials/navigation.php';
     include '../config/dbconfig.php';
 
     $blogID = $_GET['blog_id'];
@@ -45,63 +46,27 @@ $comments->bind_result($cID, $cHeading, $comment, $cDateAdded, $pending, $userna
 
 ?>
 <body>
-  <header class="bg-white border-b-2 border-ctc-black">
-    <nav class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
-      <div class="flex lg:flex-1">
-        <a href="#" class="-m-1.5 p-1.5">
-          <span class="sr-only">Your Company</span>
-          <img class="h-8 w-auto" src="<?= ROOT_DIR ?>img/clydesidetclogo.svg" alt="">
-        </a>
-      </div>
-      <div class="flex lg:hidden">
-        <button type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
-          <span class="sr-only">Open main menu</span>
-          <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-          </svg>
-        </button>
-      </div>
-      <div class="hidden lg:flex lg:gap-x-12">
-        <a href="<?= ROOT_DIR ?>blog" class="text-sm font-semibold leading-6 text-gray-900">Blog</a>
-        <a href="<?= ROOT_DIR ?>contact" class="text-sm font-semibold leading-6 text-gray-900">Contact</a>
-        <a href="<?= ROOT_DIR ?>register" class="text-sm font-semibold leading-6 text-gray-900">Register</a>
-        <a href="<?= ROOT_DIR ?>login" class="text-sm font-semibold leading-6 text-gray-900">Login</a>
-      </div>
-    </nav>
-    <!-- Mobile menu, show/hide based on menu open state. -->
-    <div class="lg:hidden" role="dialog" aria-modal="true">
-      <!-- Background backdrop, show/hide based on slide-over state. -->
-      <div class="fixed inset-0 z-10"></div>
-      <div class="hidden fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
-        <div class="flex items-center justify-between">
-          <a href="#" class="-m-1.5 p-1.5">
-            <span class="sr-only">Your Company</span>
-            <img class="h-8 w-auto" src="<?= ROOT_DIR ?>img/clydesidetclogo.svg" alt="">
-          </a>
-          <button type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700">
-            <span class="sr-only">Close menu</span>
-            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-            </svg>
-          </button>
-        </div>
-        <div class="mt-6 flow-root">
-          <div class="-my-6 divide-y divide-gray-500/10">
-            <div class="space-y-2 py-6">
-              <a href="<?= ROOT_DIR ?>blog" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Blog</a>
-              <a href="<?= ROOT_DIR ?>contact" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Contact</a>
-              <a href="<?= ROOT_DIR ?>register" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Register</a>
-              <a href="<?= ROOT_DIR ?>login" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Login</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</header>
 <main>
     <section class="bg-white dark:bg-gray-900">
         <div class="flex justify-center blog-mob">
+            <!--<div class="flex justify-center items-center gap-8">
+                    <a class="delete-id bg-ctc-red text-white py-4 px-4" href="#" onclick="window.location.href='../a/deleteblog/'">
+                        <button  x-data="{ tooltip: 'Delete' }" class="delete-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-6 w-6" x-tooltip="tooltip">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M14.74 9l-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 01-2.244 2.077H8.084a2.25 2.25 0 01-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 00-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 013.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 00-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 00-7.5 0"/>
+                            </svg>
+                        </button>
+                        delete blog
+                    </a>
+                    <button class="bg-ctc-twilight text-white py-4 px-4">
+                        <a x-data="{ tooltip: 'Edite' }" onclick="window.location.href='editUser/';">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-6 w-6" x-tooltip="tooltip">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L6.832 19.82a4.5 4.5 0 01-1.897 1.13l-2.685.8.8-2.685a4.5 4.5 0 011.13-1.897L16.863 4.487zm0 0L19.5 7.125"/>
+                            </svg>
+                            edit blog
+                        </a>
+                    </button>
+                </div>-->
             <div class="flex items-center w-full max-w-3xl p-8 mx-auto lg:px-12 lg:w-3/5">
                 <div class="w-full">
                     <h1 class="text-2xl font-semibold tracking-wider text-gray-800 capitalize dark:text-white">
@@ -110,9 +75,7 @@ $comments->bind_result($cID, $cHeading, $comment, $cDateAdded, $pending, $userna
                     <p class="mt-4 text-gray-500 dark:text-gray-400">Added on: <?= $blogCreated ?></p>
                     <hr>
                     <div class="mt-6">
-                        <pre class="mt-4 text-gray-500 dark:text-gray-400">
-                            <?= $blogContent ?>
-                        </pre>    
+                        <p class="mt-4 w-7 text-gray-500 dark:text-gray-400"><?= $blogContent ?></p>    
                     </div>      
                 </div>
             </div>
@@ -127,19 +90,19 @@ $comments->bind_result($cID, $cHeading, $comment, $cDateAdded, $pending, $userna
                 <div class="w-full xl:w-3/4 lg:w-11/12 flex">
                     <!-- Col -->
                     <!-- the left column with image, this is always visible -->
-                    <div class="w-full h-auto bg-gray-400 hidden lg:block lg:w-1/2 bg-cover rounded-l-lg" style="background-image: url('<?= ROOT_DIR ?>/img<?= $imgPath ?>')"></div>
+                    <div class="w-full h-auto bg-gray-400 hidden lg:block lg:w-1/2 bg-cover rounded-l-lg" style="background-image: url('<?= ROOT_DIR ?>img/<?= $imgPath ?>')"></div>
                     <!-- Col -->
                     <?php if (!isset($_SESSION['loggedin'])): ?>
                         <!-- this is the column that will diplay if they are not loggin in -->
                         <div class="w-full lg:w-1/2 bg-white p-5 rounded-lg lg:rounded-l-none">
                             <div class="px-8 mb-4 text-center">
                                 <h3 class="pt-4 mb-2 text-2xl">Already have an account?</h3>
-                                <button onclick="window.location.href='/login';" class="w-full px-3 py-2 text-sm leading-tight text-gray-700 border rounded shadow appearance-none focus:outline-none focus:shadow-outline">SIGN IN</button>
+                                <button onclick="window.location.href='../login';" class="w-full px-3 py-2 text-sm leading-tight text-white bg-ctc-gold border rounded shadow appearance-none focus:outline-none focus:shadow-outline">SIGN IN</button>
                             </div>
                             <div class="px-8 mb-4 text-center">
                                 <h3 class="pt-4 mb-2 text-2xl">Get involved</h3>
                                 <p class="mb-4 text-sm text-gray-700"> Sign up today to get access to early bird tickets</p>
-                                <button onclick="window.location.href='/register';" class="w-full px-3 py-2 text-sm leading-tight text-gray-700 border rounded shadow appearance-none focus:outline-none focus:shadow-outline">SIGN UP</button>
+                                <button onclick="window.location.href='../register';" class="w-full px-3 py-2 text-sm leading-tight text-white bg-ctc-gold border rounded shadow appearance-none focus:outline-none focus:shadow-outline">SIGN UP</button>
                             </div>
                             <?php else: ?>
                                 <!-- this is the column that will diplay if they are not loggin in -->
@@ -149,7 +112,7 @@ $comments->bind_result($cID, $cHeading, $comment, $cDateAdded, $pending, $userna
                                         <p class="mb-4 text-sm text-gray-700">Your post will be visible once it as been approved by our admin</p>
                                     </div>
                                     <div class="max-w-2xl mx-auto">
-                                        <form action="../account/dashboard/user/addComment.php?blog_id=<?= $blogID ?>" method="post">
+                                        <form action="<?= ROOT_DIR ?>dashboard/user/addComment.php?blog_id=<?= $blogID ?>" method="post">
                                         <input type="hidden" name="fk_user_id" value="<?= $userID ?>">
                                         <input type="hidden" name="fk_blog_id" value="<?= $blogID ?>">
                                         <div class="py-2 px-4 bg-white rounded-b-lg dark:bg-gray-800">
@@ -160,7 +123,7 @@ $comments->bind_result($cID, $cHeading, $comment, $cDateAdded, $pending, $userna
                                             <label for="editor" class="sr-only"></label>
                                             <textarea name="comment" id="editor" rows="8" class="block px-0 w-full border rounded shadow py-5 px-5 text-sm text-gray-800 bg-white border-0 dark:bg-gray-800 focus:ring-0 dark:text-white dark:placeholder-gray-400" placeholder="Add your comment" required></textarea>
                                         </div>
-                                        <button type="submit" class="inline-flex items-center px-5 py-2.5 text-sm font-medium text-center text-white bg-blue-700 rounded-lg focus:ring-4 focus:ring-blue-200 dark:focus:ring-blue-900 hover:bg-blue-800">Comment</button>
+                                        <button type="submit" class="inline-flex items-center px-5 py-2.5 text-sm font-medium text-center text-white bg-ctc-twilight focus:ring-4 focus:ring-blue-200 dark:focus:ring-blue-900 hover:bg-ctc-red">Comment</button>
                                     </form>
                                 </div>  
                             </div>
@@ -199,14 +162,16 @@ $comments->bind_result($cID, $cHeading, $comment, $cDateAdded, $pending, $userna
             </div>
         </div>
 </main>
-      <footer class="border-t-2 border-ctc-black py-6 font-body">
-        <div class="flex justify-between">
-          <p class="ml-4">&copy; Clydeside Theatre Company</p>
-          <div class="contents mr-4">
+<footer class="border-t-2 border-ctc-black py-6 font-body">
+    <div class="flex justify-between md:justify-evenly">
+        <p class="ml-4">&copy; Clydeside Theatre Company</p>
+        <div class="contents mr-4">
             <a class="text-2xl" href="https://facebook.com"><i class="fa-brands fa-facebook-f"></i></a>
             <a class="text-2xl mr-3" href="https://twitter.com"><i class="fa-brands fa-twitter"></i></a>
-          </div>
         </div>
-      </footer>
-      <script src="/college/hndweb/sdmultiweb/clydesidetheatrecompany/js/hamburger.js"></script> 
-<?php include '../partials/footer.php';?>
+    </div>
+</footer>
+      
+<?php
+    include '../partials/footer.php';
+?>

@@ -22,25 +22,31 @@ RewriteRule ^register$ pages/register.php [L]
 RewriteRule ^blog$ pages/blog.php [L]
 RewriteRule ^blogDetails/([0-9]+)$ pages/blogpost.php?blog_id=$1 [L]
 RewriteRule ^contact$ pages/contact.php [L]
+RewriteRule ^home$ index.php [L]
+RewriteRule ^logout$ pages/logout.php [L]
 
 
 # User Navigation
-RewriteRule ^u/dashboard$ account/dashboard/user/index.php [L]
-RewriteRule ^u/comments$ account/dashboard/user/userComments.php [L]
-RewriteRule ^u/account$ account/dashboard/user/account.php [L]
+RewriteRule ^u/dashboard$ dashboard/user/index.php [L]
+RewriteRule ^u/comments$ dashboard/user/userComments.php [L]
+RewriteRule ^u/account$ dashboard/user/account.php [L]
 
 
 
 #Admin Navigation
-RewriteRule ^a/dashboard$ account/dashboard/admin/index.php [L]
-RewriteRule ^a/allUsers$ account/dashboard/admin/pages/user.php [L]
-RewriteRule ^a/addBlog$ account/dashboard/admin/pages/addBlog.php [L]
-RewriteRule ^a/pendingComments$ account/dashboard/admin/pages/pendingComments.php [L]
-RewriteRule ^a/commentDetails/([0-9]+)$ account/dashboard/admin/pages/commentDetails.php?cid=$1 [L]
-RewriteRule ^a/deleteUser/([0-9]+)$ account/dashboard/admin/components/deletePopup.php?uid=$1 [L]
-# RewriteRule ^a/deleteUserConfirm/([0-9]+)$ account/dashboard/admin/config/deleteUser.php?uid=$1 [L]
-RewriteRule ^a/deactivateUser/([0-9]+)$ account/dashboard/admin/config/deactivateUser.php?uid=$1 [L]
-RewriteRule ^a/activateUser/([0-9]+)$ account/dashboard/admin/config/activateUser.php?uid=$1 [L]
-RewriteRule ^a/editUser/([0-9]+)$ account/dashboard/admin/pages/editUser.php?uid=$1 [L]
+RewriteRule ^a/dashboard$ dashboard/admin/index.php [L]
+RewriteRule ^a/allUsers$ dashboard/admin/user.php [L]
+RewriteRule ^a/addBlog$ dashboard/admin/addBlog.php [L]
+RewriteRule ^a/deleteblog/([0-9]+)$ dashboard/admin/components/deletePopupblog.php?bid=$1 [L]
+RewriteRule ^a/deleteblogConfirm/([0-9]+)$ dashboard/admin/config/deleteblog.php?bid=$1 [L]
+RewriteRule ^a/addBlogConfig$ dashboard/admin/config/addBlogConfig.php [L]
+RewriteRule ^a/pendingComments$ dashboard/admin/pendingComments.php [L]
+RewriteRule ^a/commentDetails/([0-9]+)$ dashboard/admin/commentDetails.php?cid=$1 [L]
+RewriteRule ^a/deleteUser/([0-9]+)$ dashboard/admin/components/deletePopup.php?uid=$1 [L]
+RewriteRule ^a/deleteUserConfirm/([0-9]+)$ account/dashboard/admin/config/deleteUser.php?uid=$1 [L]
+RewriteRule ^a/deactivateUser/([0-9]+)$ dashboard/admin/config/deactivateUser.php?uid=$1 [L]
+RewriteRule ^a/activateUser/([0-9]+)$ dashboard/admin/config/activateUser.php?uid=$1 [L]
+RewriteRule ^a/editUser/([0-9]+)$ dashboard/admin/editUser.php?uid=$1 [L]
+RewriteRule ^a/addUser$ dashboard/admin/addUser.php?uid=$1 [L]
 
 

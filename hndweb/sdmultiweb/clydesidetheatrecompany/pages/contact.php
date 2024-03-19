@@ -107,7 +107,7 @@
         </section>
       </main>
       <footer class="border-t-2 border-ctc-black py-6 font-body">
-        <div class="flex justify-between">
+        <div class="flex justify-between md:justify-evenly">
           <p class="ml-4">&copy; Clydeside Theatre Company</p>
           <div class="contents mr-4">
             <a class="text-2xl" href="https://facebook.com"><i class="fa-brands fa-facebook-f"></i></a>
@@ -115,5 +115,4 @@
           </div>
         </div>
       </footer>
-      <script src="/college/hndweb/sdmultiweb/clydesidetheatrecompany/js/hamburger.js"></script> 
 <?php include '../partials/footer.php';?>

@@ -10,7 +10,8 @@ module.exports = {
       colors: {
         'ctc-gold': '#D9A362',
         'ctc-black': '#0D0D0D',
-        'ctc-twilight': '#4F528C'
+        'ctc-twilight': '#4F528C',
+        'ctc-red': '#f2133c'
       },
       fontFamily: {
         'body': ['sans-serif'],

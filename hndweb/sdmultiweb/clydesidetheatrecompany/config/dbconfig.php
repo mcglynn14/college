@@ -1,6 +1,5 @@
 <?php
 
-
 $hn = "localhost";
 $un = "clydeside";
 $pw = "_b*6))4X_uAMB)7-";
